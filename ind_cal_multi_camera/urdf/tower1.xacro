@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <robot name="data_aquisition" xmlns:xacro="http://ros.org/wiki/xacro">
-     <xacro:include filename="$(find multi_camera)/urdf/tower_macro.xacro" />
+     <xacro:include filename="$(find ind_cal_multi_camera)/urdf/tower_macro.xacro" />
      
       <link name="world_frame" />
       <link name="target_frame" >

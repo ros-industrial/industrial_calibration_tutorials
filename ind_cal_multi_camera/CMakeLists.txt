@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(multi_camera)
+project(ind_cal_multi_camera)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -84,7 +84,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES multi_camera
+#  LIBRARIES ind_cal_multi_camera
 #  CATKIN_DEPENDS industrial_extrinsic_cal roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -101,8 +101,8 @@ include_directories(
 )
 
 ## Declare a cpp library
-# add_library(multi_camera
-#   src/${PROJECT_NAME}/multi_camera.cpp
+# add_library(ind_cal_multi_camera
+#   src/${PROJECT_NAME}/ind_cal_multi_camera.cpp
 # )
 
 ## Declare a cpp executable
@@ -110,7 +110,7 @@ include_directories(
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(multi_camera_node multi_camera_generate_messages_cpp)
+# add_dependencies(ind_cal_multi_camera_node ind_cal_multi_camera_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(calibration_image_pub
@@ -132,7 +132,7 @@ target_link_libraries(calibration_image_pub
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS multi_camera multi_camera_node
+# install(TARGETS ind_cal_multi_camera ind_cal_multi_camera_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -157,7 +157,7 @@ target_link_libraries(calibration_image_pub
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_multi_camera.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_ind_cal_multi_camera.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

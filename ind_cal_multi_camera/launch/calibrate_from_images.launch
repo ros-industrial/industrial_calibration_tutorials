@@ -2,23 +2,23 @@
 <launch>
 
    <!-- arguments for this file -->
-   <arg name="tower1_model" default="$(find multi_camera)/urdf/tower1.xacro" />
+   <arg name="tower1_model" default="$(find ind_cal_multi_camera)/urdf/tower1.xacro" />
    <arg name="gui" default="False" />
    <arg name="robot1" default="Robot1"/>
 
    <!-- advertise Asus sensor data-->
-   <node pkg="multi_camera" type="calibration_image_pub" name="image_publisher" output="screen">
-     <param name="image_directory" value="$(find multi_camera)/images" />
+   <node pkg="ind_cal_multi_camera" type="calibration_image_pub" name="image_publisher" output="screen">
+     <param name="image_directory" value="$(find ind_cal_multi_camera)/images" />
    </node>
 
    <!-- Launch the extrinsic calibration service -->
    <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
-     <param name="yaml_file_path" value="$(find multi_camera)/yaml/" />
+     <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
      <rosparam>
        camera_file: "scan_n_plan_cameras.yaml"
        target_file: "scan_n_plan_targets.yaml"
        cal_job_file: "scan_n_plan_caljob.yaml"
-       store_results_package_name: "multi_camera"
+       store_results_package_name: "ind_cal_multi_camera"
        store_results_file_name: "tower_transforms.launch"
      </rosparam>
    </node> 
@@ -34,11 +34,11 @@
     </node>
 
    <!-- Launch Rviz -->
-   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find multi_camera)/tower_scene.rviz"/>
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ind_cal_multi_camera)/tower_scene.rviz"/>
 
    <!-- Launch mutable joint state publisher for calibratable transforms -->
    <node  name="tower1_camera_locs" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" >
-       <param name="mutableJointStateYamlFile" value="$(find multi_camera)/yaml/towers_mutable_joint_states.yaml" />
+       <param name="mutableJointStateYamlFile" value="$(find ind_cal_multi_camera)/yaml/towers_mutable_joint_states.yaml" />
        <remap from="mutable_joint_states" to="$(arg robot1)/joint_states" />
    </node>
 
