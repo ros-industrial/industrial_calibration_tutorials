@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<robot name="data_aquisition" xmlns:xacro="http://ros.org/wiki/xacro">
+     <xacro:include filename="$(find multi_camera)/urdf/tower_macro.xacro" />
+     
+      <link name="world_frame" />
+      <link name="target_frame" >
+	<visual>
+                   <origin xyz="0.6096  1.2192 0.0254" />
+  	    <geometry>
+           	           <box size="1.2192  2.4384 0.0508" />
+                    </geometry>
+               </visual>
+     </link>
+     <joint name="$world_2_cal_target_joint" type="fixed" >
+               <parent link="world_frame" />
+	<child link="target_frame" />
+	<origin rpy="1.5708 0.0 -1.5708" xyz="0.0 5.5 1.0" />
+     </joint>
+
+      <xacro:tower_def tower_name="T1" parent_link="world_frame" x_location="-1.5" y_location="5.0" z_location="0.0" yaw="0.0"/>
+      <xacro:tower_def tower_name="T2" parent_link="world_frame" x_location=" 1.5" y_location="5.0" z_location="0.0" yaw="3.14"/>
+
+</robot>
+

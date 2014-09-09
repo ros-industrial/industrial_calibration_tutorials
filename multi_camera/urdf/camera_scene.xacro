@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+
+<robot name="Robot1" xmlns:xacro="http://ros.org/wiki/xacro">
+     <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/calibration_transform_macro.xacro" />
+     <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/asus_sensor_cal_macro.xacro" />
+     
+      <link name="world_frame" />
+
+      <link name="target_frame" >
+	<visual>
+            <origin xyz="0.6096  1.2192 0.0254" />
+ 	    <geometry>
+                <box size="1.2192  2.4384 0.0508" />
+            </geometry>
+          </visual>
+     </link>
+
+     <link name="Basler1" >
+         <visual>
+            <origin xyz=".01 .01 .01" />
+            <geometry>
+                 <box size=".02 .02 .02" />
+            </geometry>
+         </visual>
+     </link>
+
+     <link name="Basler2" >
+         <visual>
+            <origin xyz=".01 .01 .01" />
+            <geometry>
+                 <box size=".02 .02 .02" />
+            </geometry>
+         </visual>
+     </link>
+
+     <joint name="$world_2_cal_target_joint" type="fixed" >
+        <parent link="world_frame" />
+	<child link="target_frame" />
+	<origin rpy="1.4312 0.0 -1.5708" xyz="5.64 0.5  0.0" />
+     </joint>
+
+     <xacro:calibration_definitions child_link="Basler1" parent_link="world_frame" />
+     <xacro:calibration_definitions child_link="Basler2" parent_link="world_frame" />
+
+     <xacro:asus_sensor_definitions prefix="asus1" parent_link="world_frame" />
+     <xacro:asus_sensor_definitions prefix="asus2" parent_link="world_frame" />
+
+</robot>
+

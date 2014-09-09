@@ -1,0 +1,60 @@
+true
+---
+This is a simple list of mutable joint states
+---
+true
+---
+each line has the form
+---
+true
+---
+"joint_name: <double_value>"
+---
+T1_camera1_link_pitch_joint: -2.6
+T1_camera1_link_roll_joint: 3.14
+T1_camera1_link_x_joint: 0.25
+T1_camera1_link_y_joint: 0.05
+T1_camera1_link_yaw_joint: 3.14
+T1_camera1_link_z_joint: 0.5
+T1_camera2_link_pitch_joint: 0
+T1_camera2_link_roll_joint: 1.57
+T1_camera2_link_x_joint: 0.25
+T1_camera2_link_y_joint: -0.1
+T1_camera2_link_yaw_joint: -0.2
+T1_camera2_link_z_joint:  1.6
+T1_camera3_link_pitch_joint: 0.0
+T1_camera3_link_roll_joint: -1.5
+T1_camera3_link_x_joint: 0.25
+T1_camera3_link_y_joint: 0.1
+T1_camera3_link_yaw_joint: 0.2
+T1_camera3_link_z_joint: 1.6
+T1_camera4_link_pitch_joint: 0.2
+T1_camera4_link_roll_joint: 3.14
+T1_camera4_link_x_joint: 0.25
+T1_camera4_link_y_joint: 0.0
+T1_camera4_link_yaw_joint: 0.0
+T1_camera4_link_z_joint: 3.0
+T2_camera1_link_pitch_joint: -2.6
+T2_camera1_link_roll_joint: 3.14
+T2_camera1_link_x_joint: 0.25
+T2_camera1_link_y_joint: 0.05
+T2_camera1_link_yaw_joint: 3.14
+T2_camera1_link_z_joint: 0.5
+T2_camera2_link_pitch_joint: 0
+T2_camera2_link_roll_joint: 1.57
+T2_camera2_link_x_joint: 0.25
+T2_camera2_link_y_joint: -0.1
+T2_camera2_link_yaw_joint: -0.2
+T2_camera2_link_z_joint:  1.6
+T2_camera3_link_pitch_joint: 0.0
+T2_camera3_link_roll_joint: -1.5
+T2_camera3_link_x_joint: 0.25
+T2_camera3_link_y_joint: 0.1
+T2_camera3_link_yaw_joint: 0.2
+T2_camera3_link_z_joint: 1.6
+T2_camera4_link_pitch_joint: 0.2
+T2_camera4_link_roll_joint: 3.14
+T2_camera4_link_x_joint: 0.25
+T2_camera4_link_y_joint: 0.0
+T2_camera4_link_yaw_joint: 0.0
+T2_camera4_link_z_joint: 3.0

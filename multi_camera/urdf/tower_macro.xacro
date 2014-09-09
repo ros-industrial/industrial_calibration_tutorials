@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+      <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/asus_sensor_cal_macro.xacro" />
+
+      <xacro:macro name="tower_def" params="tower_name parent_link x_location y_location z_location yaw">
+
+            <!-- links -->
+            <!-- The tower -->
+            <link name="${tower_name}_frame" >
+          	<visual>
+            	          <origin xyz="0 0 2.0" />
+                         <geometry>
+                      	  <box size=".15 .15 4.0" />
+                         </geometry>
+              </visual>
+            </link>
+
+	    <!-- Health Target 
+            <link name="${tower_name}_health_target" >
+               <visual>
+                   <origin xyz="0.019 0.0 0.25" />
+  	           <geometry>
+           	         <box size="0.038 1.0 0.5" />
+                   </geometry>
+                </visual>
+            </link>
+
+            <joint name="${tower_name}_2_health_target_joint" type="fixed">
+                <parent link="${tower_name}_frame" />
+                <child link="${tower_name}_health_target" />
+                <origin rpy="0 0 0" xyz="0.075 0.0 1.25" />
+            </joint>
+            -->
+
+
+            <!-- joints -->
+            <joint name="$world_2_${tower_name}_joint" type="fixed" >
+	    <parent link="${parent_link}" />
+	    <child link="${tower_name}_frame" />
+	    <origin rpy="0 0 ${yaw}" xyz="${x_location} ${y_location} ${z_location}" />
+            </joint>
+
+
+            <!-- include 4 calibratible asus cameras -->
+            <xacro:asus_sensor_definitions prefix="${tower_name}_camera1" parent_link="${tower_name}_frame"/>
+            <xacro:asus_sensor_definitions prefix="${tower_name}_camera2" parent_link="${tower_name}_frame"/>
+            <xacro:asus_sensor_definitions prefix="${tower_name}_camera3" parent_link="${tower_name}_frame"/>
+            <xacro:asus_sensor_definitions prefix="${tower_name}_camera4" parent_link="${tower_name}_frame"/>
+
+      </xacro:macro>
+
+</robot>
