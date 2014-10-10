@@ -42,5 +42,6 @@
        <remap from="mutable_joint_states" to="$(arg robot1)/joint_states" />
    </node>
 
+   <node name="cal_gui" pkg="calibrate_gui" type="calibrate_gui" />
 
 </launch>
