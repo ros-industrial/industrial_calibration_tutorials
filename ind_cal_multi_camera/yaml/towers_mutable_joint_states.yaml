@@ -1,15 +1,3 @@
-true
----
-This is a simple list of mutable joint states
----
-true
----
-each line has the form
----
-true
----
-"joint_name: <double_value>"
----
 T1_camera1_link_pitch_joint: -2.6
 T1_camera1_link_roll_joint: 3.14
 T1_camera1_link_x_joint: 0.25
