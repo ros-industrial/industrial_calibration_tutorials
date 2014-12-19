@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<launch>
+
+   <arg name="asus" default="false" />
+   <arg name="asus_device_id" default="2@1"/>
+   <arg name="asus_camera_name" default="asus1"/>
+   <arg name="asus_calprefix" default="1"/>
+
+   <arg name="basler" default="false" />
+   <arg name="basler_sn" default="21511093"/>
+
+   <!-- Launch the asus camera node -->
+   <include if="$(arg asus)" file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
+     <arg name="topic_ns" value="$(arg asus_camera_name)" />
+     <arg name="tf_prefix" value="$(arg asus_camera_name)"/>
+     <arg name="cal_prefix" value="$(arg asus_calprefix)" />
+     <arg name="device_id" value="$(arg asus_device_id)" />
+     <arg name="publish_tf" value="false" />
+   </include> 
+
+
+   <!-- Basler camera node   -->
+   <node if="$(arg basler)" pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
+     <param name="camera_id" value="Basler-$(arg basler_sn)"/>
+     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="exposure_mode" value="auto_once"/>
+     <param name="exposure_time" value="1000"/>
+     <param name="auto_white_balance_once" value="true"/>
+     <param name="gain_mode" value="auto_once"/>
+     <param name="gain" value="0"/>
+     <param name="digital_shift" value="0"/>
+     <param name="mtu" value="1500"/>
+     <param name="bin_x" value="1"/>
+     <param name="bin_y" value="1"/>
+     <param name="roi_x" value="0"/>
+     <param name="roi_y" value="0"/>
+     <param name="roi_width" value="1624"/>
+     <param name="roi_height" value="1234"/>
+     <param name="frame_rate" value="30"/>
+   </node>
+
+
+   <!-- Launch the extrinsic calibration service -->
+   <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
+     <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <rosparam>
+       camera_file: "basler_camera.yaml"
+       target_file: "intrinsic_target.yaml"
+       cal_job_file: "intrinsic_caljob.yaml"
+       store_results_package_name: "ind_cal_multi_camera"
+       store_results_file_name: "intrinsic.launch"
+     </rosparam>
+   </node> 
+
+   <!-- Start gui with calibration button -->
+   <node name="cal_gui" pkg="calibrate_gui" type="calibrate_gui" />
+
+   <!-- Start scene trigger node -->
+   <node name="scene_trigger" pkg="industrial_extrinsic_cal" type="camera_observer_scene_trigger" >
+	<param name="target_type" value="1" />
+	<param name="pattern_rows" value="10" />
+	<param name="pattern_cols" value="10" />
+   </node>
+
+   <node name="results_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_results_image"/>
+   </node>
+
+   <node name="raw_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_raw_image"/>
+   </node>
+
+   <node name="necessary_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/asus1/rgb/image_raw"/>
+   </node>
+
+</launch>
