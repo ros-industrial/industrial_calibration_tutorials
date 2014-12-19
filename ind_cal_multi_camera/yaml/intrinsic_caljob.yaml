@@ -1,0 +1,1764 @@
+---
+reference_frame: world_frame
+scenes:
+-
+    scene_id: 0
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 150
+         roi_min_y: 0
+         roi_max_y: 150
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 150
+        roi_y_min: 0
+        roi_y_max: 150
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 1
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 150
+         roi_min_y: 110
+         roi_max_y: 260
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 150
+        roi_y_min: 110
+        roi_y_max: 260
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 2
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 150
+         roi_min_y: 220
+         roi_max_y: 370
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 150
+        roi_y_min: 220
+        roi_y_max: 370
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 3
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 150
+         roi_min_y: 330
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 150
+        roi_y_min: 330
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 4
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 0
+         roi_max_y: 150
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 0
+        roi_y_max: 150
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 5
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 110
+         roi_max_y: 260
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 110
+        roi_y_max: 260
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 6
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 220
+         roi_max_y: 370
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 220
+        roi_y_max: 370
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 7
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 330
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 330
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 8
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 0
+         roi_max_y: 150
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 0
+        roi_y_max: 150
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 9
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 110
+         roi_max_y: 260
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 110
+        roi_y_max: 260
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 10
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 220
+         roi_max_y: 370
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 220
+        roi_y_max: 370
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 11
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 330
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 330
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 12
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 0
+         roi_max_y: 150
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 0
+        roi_y_max: 150
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 13
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 110
+         roi_max_y: 260
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 110
+        roi_y_max: 260
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 14
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 220
+         roi_max_y: 370
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 220
+        roi_y_max: 370
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 15
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 330
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 330
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 16
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 0
+         roi_max_y: 150
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 0
+        roi_y_max: 150
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 17
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 110
+         roi_max_y: 260
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 110
+        roi_y_max: 260
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 18
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 220
+         roi_max_y: 370
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 220
+        roi_y_max: 370
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 19
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 330
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 330
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 20
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 200
+         roi_min_y: 0
+         roi_max_y: 200
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 200
+        roi_y_min: 0
+        roi_y_max: 200
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 21
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 200
+         roi_min_y: 93
+         roi_max_y: 293
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 200
+        roi_y_min: 93
+        roi_y_max: 293
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 22
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 200
+         roi_min_y: 186
+         roi_max_y: 386
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 200
+        roi_y_min: 186
+        roi_y_max: 386
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 23
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 200
+         roi_min_y: 280
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 200
+        roi_y_min: 280
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 24
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 0
+         roi_max_y: 200
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 0
+        roi_y_max: 200
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 25
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 93
+         roi_max_y: 293
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 93
+        roi_y_max: 293
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 26
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 186
+         roi_max_y: 386
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 186
+        roi_y_max: 386
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 27
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 280
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 280
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 28
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 0
+         roi_max_y: 200
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 0
+        roi_y_max: 200
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 29
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 93
+         roi_max_y: 293
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 93
+        roi_y_max: 293
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 30
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 186
+         roi_max_y: 386
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 186
+        roi_y_max: 386
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 31
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 280
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 280
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 32
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 0
+         roi_max_y: 200
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 0
+        roi_y_max: 200
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 33
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 93
+         roi_max_y: 293
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 93
+        roi_y_max: 293
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 34
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 186
+         roi_max_y: 386
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 186
+        roi_y_max: 386
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 35
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 280
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 280
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 36
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 0
+         roi_max_y: 200
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 0
+        roi_y_max: 200
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 37
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 93
+         roi_max_y: 293
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 93
+        roi_y_max: 293
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 38
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 186
+         roi_max_y: 386
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 186
+        roi_y_max: 386
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 39
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 280
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 280
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 40
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 250
+         roi_min_y: 0
+         roi_max_y: 250
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 250
+        roi_y_min: 0
+        roi_y_max: 250
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 41
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 250
+         roi_min_y: 76
+         roi_max_y: 326
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 250
+        roi_y_min: 76
+        roi_y_max: 326
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 42
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 250
+         roi_min_y: 153
+         roi_max_y: 403
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 250
+        roi_y_min: 153
+        roi_y_max: 403
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 43
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 250
+         roi_min_y: 230
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 250
+        roi_y_min: 230
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 44
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 0
+         roi_max_y: 250
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 0
+        roi_y_max: 250
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 45
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 76
+         roi_max_y: 326
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 76
+        roi_y_max: 326
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 46
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 153
+         roi_max_y: 403
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 153
+        roi_y_max: 403
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 47
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 230
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 230
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 48
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 0
+         roi_max_y: 250
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 0
+        roi_y_max: 250
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 49
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 76
+         roi_max_y: 326
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 76
+        roi_y_max: 326
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 50
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 153
+         roi_max_y: 403
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 153
+        roi_y_max: 403
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 51
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 230
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 230
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 52
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 0
+         roi_max_y: 250
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 0
+        roi_y_max: 250
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 53
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 76
+         roi_max_y: 326
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 76
+        roi_y_max: 326
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 54
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 153
+         roi_max_y: 403
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 153
+        roi_y_max: 403
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 55
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 230
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 230
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 56
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 0
+         roi_max_y: 250
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 0
+        roi_y_max: 250
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 57
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 76
+         roi_max_y: 326
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 76
+        roi_y_max: 326
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 58
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 153
+         roi_max_y: 403
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 153
+        roi_y_max: 403
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 59
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 230
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 230
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 60
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 300
+         roi_min_y: 0
+         roi_max_y: 300
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 300
+        roi_y_min: 0
+        roi_y_max: 300
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 61
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 300
+         roi_min_y: 60
+         roi_max_y: 360
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 300
+        roi_y_min: 60
+        roi_y_max: 360
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 62
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 300
+         roi_min_y: 120
+         roi_max_y: 420
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 300
+        roi_y_min: 120
+        roi_y_max: 420
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 63
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 0
+         roi_max_x: 300
+         roi_min_y: 180
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 300
+        roi_y_min: 180
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 64
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 0
+         roi_max_y: 300
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 0
+        roi_y_max: 300
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 65
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 60
+         roi_max_y: 360
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 60
+        roi_y_max: 360
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 66
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 120
+         roi_max_y: 420
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 120
+        roi_y_max: 420
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 67
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 180
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 180
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 68
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 0
+         roi_max_y: 300
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 0
+        roi_y_max: 300
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 69
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 60
+         roi_max_y: 360
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 60
+        roi_y_max: 360
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 70
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 120
+         roi_max_y: 420
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 120
+        roi_y_max: 420
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 71
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 180
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 180
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 72
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 0
+         roi_max_y: 300
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 0
+        roi_y_max: 300
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 73
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 60
+         roi_max_y: 360
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 60
+        roi_y_max: 360
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 74
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 120
+         roi_max_y: 420
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 120
+        roi_y_max: 420
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 75
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 180
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 180
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 76
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 0
+         roi_max_y: 300
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 0
+        roi_y_max: 300
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 77
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 60
+         roi_max_y: 360
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 60
+        roi_y_max: 360
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 78
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 120
+         roi_max_y: 420
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 120
+        roi_y_max: 420
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 79
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 180
+         roi_max_y: 480
+    observations:
+    -
+        camera: asus1
+        target: mytarget
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 180
+        roi_y_max: 480
+        cost_type: CameraReprjErrorWithDistortionPK
+optimization_parameters: xx
