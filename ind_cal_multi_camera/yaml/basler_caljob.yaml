@@ -1,0 +1,3084 @@
+---
+reference_frame: world_frame
+scenes:
+-
+    scene_id: 0
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 600
+         roi_min_y: 0
+         roi_max_y: 500
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 600
+        roi_y_min: 0
+        roi_y_max: 500
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 1
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 600
+         roi_min_y: 193
+         roi_max_y: 693
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 600
+        roi_y_min: 193
+        roi_y_max: 693
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 2
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 600
+         roi_min_y: 386
+         roi_max_y: 886
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 600
+        roi_y_min: 386
+        roi_y_max: 886
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 3
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 600
+         roi_min_y: 580
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 600
+        roi_y_min: 580
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 4
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 330
+         roi_max_x: 930
+         roi_min_y: 0
+         roi_max_y: 500
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 930
+        roi_y_min: 0
+        roi_y_max: 500
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 5
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 330
+         roi_max_x: 930
+         roi_min_y: 193
+         roi_max_y: 693
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 930
+        roi_y_min: 193
+        roi_y_max: 693
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 6
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 330
+         roi_max_x: 930
+         roi_min_y: 386
+         roi_max_y: 886
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 930
+        roi_y_min: 386
+        roi_y_max: 886
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 7
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 330
+         roi_max_x: 930
+         roi_min_y: 580
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 330
+        roi_x_max: 930
+        roi_y_min: 580
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 8
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 660
+         roi_max_x: 1260
+         roi_min_y: 0
+         roi_max_y: 500
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 660
+        roi_x_max: 1260
+        roi_y_min: 0
+        roi_y_max: 500
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 9
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 660
+         roi_max_x: 1260
+         roi_min_y: 193
+         roi_max_y: 693
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 660
+        roi_x_max: 1260
+        roi_y_min: 193
+        roi_y_max: 693
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 10
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 660
+         roi_max_x: 1260
+         roi_min_y: 386
+         roi_max_y: 886
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 660
+        roi_x_max: 1260
+        roi_y_min: 386
+        roi_y_max: 886
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 11
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 660
+         roi_max_x: 1260
+         roi_min_y: 580
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 660
+        roi_x_max: 1260
+        roi_y_min: 580
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 12
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 990
+         roi_max_x: 1590
+         roi_min_y: 0
+         roi_max_y: 500
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 990
+        roi_x_max: 1590
+        roi_y_min: 0
+        roi_y_max: 500
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 13
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 990
+         roi_max_x: 1590
+         roi_min_y: 193
+         roi_max_y: 693
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 990
+        roi_x_max: 1590
+        roi_y_min: 193
+        roi_y_max: 693
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 14
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 990
+         roi_max_x: 1590
+         roi_min_y: 386
+         roi_max_y: 886
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 990
+        roi_x_max: 1590
+        roi_y_min: 386
+        roi_y_max: 886
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 15
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 990
+         roi_max_x: 1590
+         roi_min_y: 580
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 990
+        roi_x_max: 1590
+        roi_y_min: 580
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 16
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1320
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 500
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1320
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 500
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 17
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1320
+         roi_max_x: 1920
+         roi_min_y: 193
+         roi_max_y: 693
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1320
+        roi_x_max: 1920
+        roi_y_min: 193
+        roi_y_max: 693
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 18
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1320
+         roi_max_x: 1920
+         roi_min_y: 386
+         roi_max_y: 886
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1320
+        roi_x_max: 1920
+        roi_y_min: 386
+        roi_y_max: 886
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 19
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1320
+         roi_max_x: 1920
+         roi_min_y: 580
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1320
+        roi_x_max: 1920
+        roi_y_min: 580
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 20
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 660
+         roi_min_y: 0
+         roi_max_y: 550
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 660
+        roi_y_min: 0
+        roi_y_max: 550
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 21
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 660
+         roi_min_y: 176
+         roi_max_y: 726
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 660
+        roi_y_min: 176
+        roi_y_max: 726
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 22
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 660
+         roi_min_y: 353
+         roi_max_y: 903
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 660
+        roi_y_min: 353
+        roi_y_max: 903
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 23
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 660
+         roi_min_y: 530
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 660
+        roi_y_min: 530
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 24
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 315
+         roi_max_x: 975
+         roi_min_y: 0
+         roi_max_y: 550
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 315
+        roi_x_max: 975
+        roi_y_min: 0
+        roi_y_max: 550
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 25
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 315
+         roi_max_x: 975
+         roi_min_y: 176
+         roi_max_y: 726
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 315
+        roi_x_max: 975
+        roi_y_min: 176
+        roi_y_max: 726
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 26
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 315
+         roi_max_x: 975
+         roi_min_y: 353
+         roi_max_y: 903
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 315
+        roi_x_max: 975
+        roi_y_min: 353
+        roi_y_max: 903
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 27
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 315
+         roi_max_x: 975
+         roi_min_y: 530
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 315
+        roi_x_max: 975
+        roi_y_min: 530
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 28
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 630
+         roi_max_x: 1290
+         roi_min_y: 0
+         roi_max_y: 550
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 630
+        roi_x_max: 1290
+        roi_y_min: 0
+        roi_y_max: 550
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 29
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 630
+         roi_max_x: 1290
+         roi_min_y: 176
+         roi_max_y: 726
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 630
+        roi_x_max: 1290
+        roi_y_min: 176
+        roi_y_max: 726
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 30
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 630
+         roi_max_x: 1290
+         roi_min_y: 353
+         roi_max_y: 903
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 630
+        roi_x_max: 1290
+        roi_y_min: 353
+        roi_y_max: 903
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 31
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 630
+         roi_max_x: 1290
+         roi_min_y: 530
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 630
+        roi_x_max: 1290
+        roi_y_min: 530
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 32
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 945
+         roi_max_x: 1605
+         roi_min_y: 0
+         roi_max_y: 550
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 945
+        roi_x_max: 1605
+        roi_y_min: 0
+        roi_y_max: 550
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 33
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 945
+         roi_max_x: 1605
+         roi_min_y: 176
+         roi_max_y: 726
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 945
+        roi_x_max: 1605
+        roi_y_min: 176
+        roi_y_max: 726
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 34
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 945
+         roi_max_x: 1605
+         roi_min_y: 353
+         roi_max_y: 903
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 945
+        roi_x_max: 1605
+        roi_y_min: 353
+        roi_y_max: 903
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 35
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 945
+         roi_max_x: 1605
+         roi_min_y: 530
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 945
+        roi_x_max: 1605
+        roi_y_min: 530
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 36
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1260
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 550
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1260
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 550
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 37
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1260
+         roi_max_x: 1920
+         roi_min_y: 176
+         roi_max_y: 726
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1260
+        roi_x_max: 1920
+        roi_y_min: 176
+        roi_y_max: 726
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 38
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1260
+         roi_max_x: 1920
+         roi_min_y: 353
+         roi_max_y: 903
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1260
+        roi_x_max: 1920
+        roi_y_min: 353
+        roi_y_max: 903
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 39
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1260
+         roi_max_x: 1920
+         roi_min_y: 530
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1260
+        roi_x_max: 1920
+        roi_y_min: 530
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 40
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 720
+         roi_min_y: 0
+         roi_max_y: 600
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 720
+        roi_y_min: 0
+        roi_y_max: 600
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 41
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 720
+         roi_min_y: 160
+         roi_max_y: 760
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 720
+        roi_y_min: 160
+        roi_y_max: 760
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 42
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 720
+         roi_min_y: 320
+         roi_max_y: 920
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 720
+        roi_y_min: 320
+        roi_y_max: 920
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 43
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 720
+         roi_min_y: 480
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 720
+        roi_y_min: 480
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 44
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 300
+         roi_max_x: 1020
+         roi_min_y: 0
+         roi_max_y: 600
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 300
+        roi_x_max: 1020
+        roi_y_min: 0
+        roi_y_max: 600
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 45
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 300
+         roi_max_x: 1020
+         roi_min_y: 160
+         roi_max_y: 760
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 300
+        roi_x_max: 1020
+        roi_y_min: 160
+        roi_y_max: 760
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 46
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 300
+         roi_max_x: 1020
+         roi_min_y: 320
+         roi_max_y: 920
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 300
+        roi_x_max: 1020
+        roi_y_min: 320
+        roi_y_max: 920
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 47
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 300
+         roi_max_x: 1020
+         roi_min_y: 480
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 300
+        roi_x_max: 1020
+        roi_y_min: 480
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 48
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 600
+         roi_max_x: 1320
+         roi_min_y: 0
+         roi_max_y: 600
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 600
+        roi_x_max: 1320
+        roi_y_min: 0
+        roi_y_max: 600
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 49
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 600
+         roi_max_x: 1320
+         roi_min_y: 160
+         roi_max_y: 760
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 600
+        roi_x_max: 1320
+        roi_y_min: 160
+        roi_y_max: 760
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 50
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 600
+         roi_max_x: 1320
+         roi_min_y: 320
+         roi_max_y: 920
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 600
+        roi_x_max: 1320
+        roi_y_min: 320
+        roi_y_max: 920
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 51
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 600
+         roi_max_x: 1320
+         roi_min_y: 480
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 600
+        roi_x_max: 1320
+        roi_y_min: 480
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 52
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 900
+         roi_max_x: 1620
+         roi_min_y: 0
+         roi_max_y: 600
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 900
+        roi_x_max: 1620
+        roi_y_min: 0
+        roi_y_max: 600
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 53
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 900
+         roi_max_x: 1620
+         roi_min_y: 160
+         roi_max_y: 760
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 900
+        roi_x_max: 1620
+        roi_y_min: 160
+        roi_y_max: 760
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 54
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 900
+         roi_max_x: 1620
+         roi_min_y: 320
+         roi_max_y: 920
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 900
+        roi_x_max: 1620
+        roi_y_min: 320
+        roi_y_max: 920
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 55
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 900
+         roi_max_x: 1620
+         roi_min_y: 480
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 900
+        roi_x_max: 1620
+        roi_y_min: 480
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 56
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1200
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 600
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1200
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 600
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 57
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1200
+         roi_max_x: 1920
+         roi_min_y: 160
+         roi_max_y: 760
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1200
+        roi_x_max: 1920
+        roi_y_min: 160
+        roi_y_max: 760
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 58
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1200
+         roi_max_x: 1920
+         roi_min_y: 320
+         roi_max_y: 920
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1200
+        roi_x_max: 1920
+        roi_y_min: 320
+        roi_y_max: 920
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 59
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1200
+         roi_max_x: 1920
+         roi_min_y: 480
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1200
+        roi_x_max: 1920
+        roi_y_min: 480
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 60
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 780
+         roi_min_y: 0
+         roi_max_y: 650
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 780
+        roi_y_min: 0
+        roi_y_max: 650
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 61
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 780
+         roi_min_y: 143
+         roi_max_y: 793
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 780
+        roi_y_min: 143
+        roi_y_max: 793
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 62
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 780
+         roi_min_y: 286
+         roi_max_y: 936
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 780
+        roi_y_min: 286
+        roi_y_max: 936
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 63
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 780
+         roi_min_y: 430
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 780
+        roi_y_min: 430
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 64
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 285
+         roi_max_x: 1065
+         roi_min_y: 0
+         roi_max_y: 650
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 285
+        roi_x_max: 1065
+        roi_y_min: 0
+        roi_y_max: 650
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 65
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 285
+         roi_max_x: 1065
+         roi_min_y: 143
+         roi_max_y: 793
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 285
+        roi_x_max: 1065
+        roi_y_min: 143
+        roi_y_max: 793
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 66
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 285
+         roi_max_x: 1065
+         roi_min_y: 286
+         roi_max_y: 936
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 285
+        roi_x_max: 1065
+        roi_y_min: 286
+        roi_y_max: 936
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 67
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 285
+         roi_max_x: 1065
+         roi_min_y: 430
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 285
+        roi_x_max: 1065
+        roi_y_min: 430
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 68
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 570
+         roi_max_x: 1350
+         roi_min_y: 0
+         roi_max_y: 650
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 570
+        roi_x_max: 1350
+        roi_y_min: 0
+        roi_y_max: 650
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 69
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 570
+         roi_max_x: 1350
+         roi_min_y: 143
+         roi_max_y: 793
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 570
+        roi_x_max: 1350
+        roi_y_min: 143
+        roi_y_max: 793
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 70
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 570
+         roi_max_x: 1350
+         roi_min_y: 286
+         roi_max_y: 936
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 570
+        roi_x_max: 1350
+        roi_y_min: 286
+        roi_y_max: 936
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 71
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 570
+         roi_max_x: 1350
+         roi_min_y: 430
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 570
+        roi_x_max: 1350
+        roi_y_min: 430
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 72
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 855
+         roi_max_x: 1635
+         roi_min_y: 0
+         roi_max_y: 650
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 855
+        roi_x_max: 1635
+        roi_y_min: 0
+        roi_y_max: 650
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 73
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 855
+         roi_max_x: 1635
+         roi_min_y: 143
+         roi_max_y: 793
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 855
+        roi_x_max: 1635
+        roi_y_min: 143
+        roi_y_max: 793
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 74
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 855
+         roi_max_x: 1635
+         roi_min_y: 286
+         roi_max_y: 936
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 855
+        roi_x_max: 1635
+        roi_y_min: 286
+        roi_y_max: 936
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 75
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 855
+         roi_max_x: 1635
+         roi_min_y: 430
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 855
+        roi_x_max: 1635
+        roi_y_min: 430
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 76
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1140
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 650
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1140
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 650
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 77
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1140
+         roi_max_x: 1920
+         roi_min_y: 143
+         roi_max_y: 793
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1140
+        roi_x_max: 1920
+        roi_y_min: 143
+        roi_y_max: 793
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 78
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1140
+         roi_max_x: 1920
+         roi_min_y: 286
+         roi_max_y: 936
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1140
+        roi_x_max: 1920
+        roi_y_min: 286
+        roi_y_max: 936
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 79
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1140
+         roi_max_x: 1920
+         roi_min_y: 430
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1140
+        roi_x_max: 1920
+        roi_y_min: 430
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 80
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 840
+         roi_min_y: 0
+         roi_max_y: 700
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 840
+        roi_y_min: 0
+        roi_y_max: 700
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 81
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 840
+         roi_min_y: 126
+         roi_max_y: 826
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 840
+        roi_y_min: 126
+        roi_y_max: 826
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 82
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 840
+         roi_min_y: 253
+         roi_max_y: 953
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 840
+        roi_y_min: 253
+        roi_y_max: 953
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 83
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 840
+         roi_min_y: 380
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 840
+        roi_y_min: 380
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 84
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 270
+         roi_max_x: 1110
+         roi_min_y: 0
+         roi_max_y: 700
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 270
+        roi_x_max: 1110
+        roi_y_min: 0
+        roi_y_max: 700
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 85
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 270
+         roi_max_x: 1110
+         roi_min_y: 126
+         roi_max_y: 826
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 270
+        roi_x_max: 1110
+        roi_y_min: 126
+        roi_y_max: 826
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 86
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 270
+         roi_max_x: 1110
+         roi_min_y: 253
+         roi_max_y: 953
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 270
+        roi_x_max: 1110
+        roi_y_min: 253
+        roi_y_max: 953
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 87
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 270
+         roi_max_x: 1110
+         roi_min_y: 380
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 270
+        roi_x_max: 1110
+        roi_y_min: 380
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 88
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 540
+         roi_max_x: 1380
+         roi_min_y: 0
+         roi_max_y: 700
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 540
+        roi_x_max: 1380
+        roi_y_min: 0
+        roi_y_max: 700
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 89
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 540
+         roi_max_x: 1380
+         roi_min_y: 126
+         roi_max_y: 826
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 540
+        roi_x_max: 1380
+        roi_y_min: 126
+        roi_y_max: 826
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 90
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 540
+         roi_max_x: 1380
+         roi_min_y: 253
+         roi_max_y: 953
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 540
+        roi_x_max: 1380
+        roi_y_min: 253
+        roi_y_max: 953
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 91
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 540
+         roi_max_x: 1380
+         roi_min_y: 380
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 540
+        roi_x_max: 1380
+        roi_y_min: 380
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 92
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 810
+         roi_max_x: 1650
+         roi_min_y: 0
+         roi_max_y: 700
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 810
+        roi_x_max: 1650
+        roi_y_min: 0
+        roi_y_max: 700
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 93
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 810
+         roi_max_x: 1650
+         roi_min_y: 126
+         roi_max_y: 826
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 810
+        roi_x_max: 1650
+        roi_y_min: 126
+        roi_y_max: 826
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 94
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 810
+         roi_max_x: 1650
+         roi_min_y: 253
+         roi_max_y: 953
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 810
+        roi_x_max: 1650
+        roi_y_min: 253
+        roi_y_max: 953
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 95
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 810
+         roi_max_x: 1650
+         roi_min_y: 380
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 810
+        roi_x_max: 1650
+        roi_y_min: 380
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 96
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1080
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 700
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1080
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 700
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 97
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1080
+         roi_max_x: 1920
+         roi_min_y: 126
+         roi_max_y: 826
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1080
+        roi_x_max: 1920
+        roi_y_min: 126
+        roi_y_max: 826
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 98
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1080
+         roi_max_x: 1920
+         roi_min_y: 253
+         roi_max_y: 953
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1080
+        roi_x_max: 1920
+        roi_y_min: 253
+        roi_y_max: 953
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 99
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1080
+         roi_max_x: 1920
+         roi_min_y: 380
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1080
+        roi_x_max: 1920
+        roi_y_min: 380
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 100
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 900
+         roi_min_y: 0
+         roi_max_y: 750
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 900
+        roi_y_min: 0
+        roi_y_max: 750
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 101
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 900
+         roi_min_y: 110
+         roi_max_y: 860
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 900
+        roi_y_min: 110
+        roi_y_max: 860
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 102
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 900
+         roi_min_y: 220
+         roi_max_y: 970
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 900
+        roi_y_min: 220
+        roi_y_max: 970
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 103
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 900
+         roi_min_y: 330
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 900
+        roi_y_min: 330
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 104
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 255
+         roi_max_x: 1155
+         roi_min_y: 0
+         roi_max_y: 750
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 1155
+        roi_y_min: 0
+        roi_y_max: 750
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 105
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 255
+         roi_max_x: 1155
+         roi_min_y: 110
+         roi_max_y: 860
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 1155
+        roi_y_min: 110
+        roi_y_max: 860
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 106
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 255
+         roi_max_x: 1155
+         roi_min_y: 220
+         roi_max_y: 970
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 1155
+        roi_y_min: 220
+        roi_y_max: 970
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 107
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 255
+         roi_max_x: 1155
+         roi_min_y: 330
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 255
+        roi_x_max: 1155
+        roi_y_min: 330
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 108
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 510
+         roi_max_x: 1410
+         roi_min_y: 0
+         roi_max_y: 750
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 510
+        roi_x_max: 1410
+        roi_y_min: 0
+        roi_y_max: 750
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 109
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 510
+         roi_max_x: 1410
+         roi_min_y: 110
+         roi_max_y: 860
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 510
+        roi_x_max: 1410
+        roi_y_min: 110
+        roi_y_max: 860
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 110
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 510
+         roi_max_x: 1410
+         roi_min_y: 220
+         roi_max_y: 970
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 510
+        roi_x_max: 1410
+        roi_y_min: 220
+        roi_y_max: 970
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 111
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 510
+         roi_max_x: 1410
+         roi_min_y: 330
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 510
+        roi_x_max: 1410
+        roi_y_min: 330
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 112
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 765
+         roi_max_x: 1665
+         roi_min_y: 0
+         roi_max_y: 750
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 765
+        roi_x_max: 1665
+        roi_y_min: 0
+        roi_y_max: 750
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 113
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 765
+         roi_max_x: 1665
+         roi_min_y: 110
+         roi_max_y: 860
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 765
+        roi_x_max: 1665
+        roi_y_min: 110
+        roi_y_max: 860
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 114
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 765
+         roi_max_x: 1665
+         roi_min_y: 220
+         roi_max_y: 970
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 765
+        roi_x_max: 1665
+        roi_y_min: 220
+        roi_y_max: 970
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 115
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 765
+         roi_max_x: 1665
+         roi_min_y: 330
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 765
+        roi_x_max: 1665
+        roi_y_min: 330
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 116
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1020
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 750
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1020
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 750
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 117
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1020
+         roi_max_x: 1920
+         roi_min_y: 110
+         roi_max_y: 860
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1020
+        roi_x_max: 1920
+        roi_y_min: 110
+        roi_y_max: 860
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 118
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1020
+         roi_max_x: 1920
+         roi_min_y: 220
+         roi_max_y: 970
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1020
+        roi_x_max: 1920
+        roi_y_min: 220
+        roi_y_max: 970
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 119
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 1020
+         roi_max_x: 1920
+         roi_min_y: 330
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 1020
+        roi_x_max: 1920
+        roi_y_min: 330
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 120
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 960
+         roi_min_y: 0
+         roi_max_y: 800
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 960
+        roi_y_min: 0
+        roi_y_max: 800
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 121
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 960
+         roi_min_y: 93
+         roi_max_y: 893
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 960
+        roi_y_min: 93
+        roi_y_max: 893
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 122
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 960
+         roi_min_y: 186
+         roi_max_y: 986
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 960
+        roi_y_min: 186
+        roi_y_max: 986
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 123
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 0
+         roi_max_x: 960
+         roi_min_y: 280
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 0
+        roi_x_max: 960
+        roi_y_min: 280
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 124
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 240
+         roi_max_x: 1200
+         roi_min_y: 0
+         roi_max_y: 800
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 240
+        roi_x_max: 1200
+        roi_y_min: 0
+        roi_y_max: 800
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 125
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 240
+         roi_max_x: 1200
+         roi_min_y: 93
+         roi_max_y: 893
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 240
+        roi_x_max: 1200
+        roi_y_min: 93
+        roi_y_max: 893
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 126
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 240
+         roi_max_x: 1200
+         roi_min_y: 186
+         roi_max_y: 986
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 240
+        roi_x_max: 1200
+        roi_y_min: 186
+        roi_y_max: 986
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 127
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 240
+         roi_max_x: 1200
+         roi_min_y: 280
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 240
+        roi_x_max: 1200
+        roi_y_min: 280
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 128
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 480
+         roi_max_x: 1440
+         roi_min_y: 0
+         roi_max_y: 800
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 480
+        roi_x_max: 1440
+        roi_y_min: 0
+        roi_y_max: 800
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 129
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 480
+         roi_max_x: 1440
+         roi_min_y: 93
+         roi_max_y: 893
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 480
+        roi_x_max: 1440
+        roi_y_min: 93
+        roi_y_max: 893
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 130
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 480
+         roi_max_x: 1440
+         roi_min_y: 186
+         roi_max_y: 986
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 480
+        roi_x_max: 1440
+        roi_y_min: 186
+        roi_y_max: 986
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 131
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 480
+         roi_max_x: 1440
+         roi_min_y: 280
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 480
+        roi_x_max: 1440
+        roi_y_min: 280
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 132
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 720
+         roi_max_x: 1680
+         roi_min_y: 0
+         roi_max_y: 800
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 720
+        roi_x_max: 1680
+        roi_y_min: 0
+        roi_y_max: 800
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 133
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 720
+         roi_max_x: 1680
+         roi_min_y: 93
+         roi_max_y: 893
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 720
+        roi_x_max: 1680
+        roi_y_min: 93
+        roi_y_max: 893
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 134
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 720
+         roi_max_x: 1680
+         roi_min_y: 186
+         roi_max_y: 986
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 720
+        roi_x_max: 1680
+        roi_y_min: 186
+        roi_y_max: 986
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 135
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 720
+         roi_max_x: 1680
+         roi_min_y: 280
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 720
+        roi_x_max: 1680
+        roi_y_min: 280
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 136
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 960
+         roi_max_x: 1920
+         roi_min_y: 0
+         roi_max_y: 800
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 960
+        roi_x_max: 1920
+        roi_y_min: 0
+        roi_y_max: 800
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 137
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 960
+         roi_max_x: 1920
+         roi_min_y: 93
+         roi_max_y: 893
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 960
+        roi_x_max: 1920
+        roi_y_min: 93
+        roi_y_max: 893
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 138
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 960
+         roi_max_x: 1920
+         roi_min_y: 186
+         roi_max_y: 986
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 960
+        roi_x_max: 1920
+        roi_y_min: 186
+        roi_y_max: 986
+        cost_type: CameraReprjErrorWithDistortionPK
+-
+    scene_id: 139
+    trigger: ROS_CAMERA_OBSERVER_TRIGGER
+    trigger_parameters:
+    -
+         service_name: ObserverTrigger
+         instructions: Center target within region of interest
+         image_topic: /basler1/rgb/image
+         target_type: 2
+         roi_min_x: 960
+         roi_max_x: 1920
+         roi_min_y: 280
+         roi_max_y: 1080
+    observations:
+    -
+        camera: basler1
+        target: mytarget
+        roi_x_min: 960
+        roi_x_max: 1920
+        roi_y_min: 280
+        roi_y_max: 1080
+        cost_type: CameraReprjErrorWithDistortionPK
+optimization_parameters: xx
