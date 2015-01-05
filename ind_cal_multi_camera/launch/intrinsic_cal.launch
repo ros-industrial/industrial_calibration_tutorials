@@ -32,7 +32,7 @@
    <!-- Basler camera node   -->
    <node if="$(arg basler)" pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
      <param name="camera_id" value="Basler-$(arg basler_sn)"/>
-     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="pixel_format" value="bayer_gbrg8"/>
      <param name="exposure_mode" value="auto_once"/>
      <param name="exposure_time" value="35000"/>
      <param name="auto_white_balance_once" value="true"/>
@@ -90,6 +90,7 @@
 
    <node name="results_view" pkg="image_view" type="image_view" >
               <remap from="image" to="/observer_results_image"/>
+
    </node>
 
    <node name="raw_view" pkg="image_view" type="image_view" >
