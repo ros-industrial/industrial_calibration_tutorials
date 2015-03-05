@@ -16,7 +16,7 @@ scenes:
          roi_max_y: 500
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 600
@@ -38,7 +38,7 @@ scenes:
          roi_max_y: 744
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 600
@@ -60,7 +60,7 @@ scenes:
          roi_max_y: 989
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 600
@@ -82,7 +82,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 600
@@ -104,7 +104,7 @@ scenes:
          roi_max_y: 500
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 256
         roi_x_max: 856
@@ -126,7 +126,7 @@ scenes:
          roi_max_y: 744
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 256
         roi_x_max: 856
@@ -148,7 +148,7 @@ scenes:
          roi_max_y: 989
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 256
         roi_x_max: 856
@@ -170,7 +170,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 256
         roi_x_max: 856
@@ -192,7 +192,7 @@ scenes:
          roi_max_y: 500
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 512
         roi_x_max: 1112
@@ -214,7 +214,7 @@ scenes:
          roi_max_y: 744
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 512
         roi_x_max: 1112
@@ -236,7 +236,7 @@ scenes:
          roi_max_y: 989
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 512
         roi_x_max: 1112
@@ -258,7 +258,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 512
         roi_x_max: 1112
@@ -280,7 +280,7 @@ scenes:
          roi_max_y: 500
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 768
         roi_x_max: 1368
@@ -302,7 +302,7 @@ scenes:
          roi_max_y: 744
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 768
         roi_x_max: 1368
@@ -324,7 +324,7 @@ scenes:
          roi_max_y: 989
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 768
         roi_x_max: 1368
@@ -346,7 +346,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 768
         roi_x_max: 1368
@@ -368,7 +368,7 @@ scenes:
          roi_max_y: 500
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 1024
         roi_x_max: 1624
@@ -390,7 +390,7 @@ scenes:
          roi_max_y: 744
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 1024
         roi_x_max: 1624
@@ -412,7 +412,7 @@ scenes:
          roi_max_y: 989
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 1024
         roi_x_max: 1624
@@ -434,7 +434,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 1024
         roi_x_max: 1624
@@ -456,7 +456,7 @@ scenes:
          roi_max_y: 550
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 660
@@ -478,7 +478,7 @@ scenes:
          roi_max_y: 778
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 660
@@ -500,7 +500,7 @@ scenes:
          roi_max_y: 1006
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 660
@@ -522,7 +522,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 660
@@ -544,7 +544,7 @@ scenes:
          roi_max_y: 550
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 241
         roi_x_max: 901
@@ -566,7 +566,7 @@ scenes:
          roi_max_y: 778
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 241
         roi_x_max: 901
@@ -588,7 +588,7 @@ scenes:
          roi_max_y: 1006
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 241
         roi_x_max: 901
@@ -610,7 +610,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 241
         roi_x_max: 901
@@ -632,7 +632,7 @@ scenes:
          roi_max_y: 550
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 482
         roi_x_max: 1142
@@ -654,7 +654,7 @@ scenes:
          roi_max_y: 778
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 482
         roi_x_max: 1142
@@ -676,7 +676,7 @@ scenes:
          roi_max_y: 1006
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 482
         roi_x_max: 1142
@@ -698,7 +698,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 482
         roi_x_max: 1142
@@ -720,7 +720,7 @@ scenes:
          roi_max_y: 550
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 723
         roi_x_max: 1383
@@ -742,7 +742,7 @@ scenes:
          roi_max_y: 778
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 723
         roi_x_max: 1383
@@ -764,7 +764,7 @@ scenes:
          roi_max_y: 1006
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 723
         roi_x_max: 1383
@@ -786,7 +786,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 723
         roi_x_max: 1383
@@ -808,7 +808,7 @@ scenes:
          roi_max_y: 550
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 964
         roi_x_max: 1624
@@ -830,7 +830,7 @@ scenes:
          roi_max_y: 778
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 964
         roi_x_max: 1624
@@ -852,7 +852,7 @@ scenes:
          roi_max_y: 1006
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 964
         roi_x_max: 1624
@@ -874,7 +874,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 964
         roi_x_max: 1624
@@ -896,7 +896,7 @@ scenes:
          roi_max_y: 600
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 720
@@ -918,7 +918,7 @@ scenes:
          roi_max_y: 811
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 720
@@ -940,7 +940,7 @@ scenes:
          roi_max_y: 1022
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 720
@@ -962,7 +962,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 720
@@ -984,7 +984,7 @@ scenes:
          roi_max_y: 600
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 226
         roi_x_max: 946
@@ -1006,7 +1006,7 @@ scenes:
          roi_max_y: 811
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 226
         roi_x_max: 946
@@ -1028,7 +1028,7 @@ scenes:
          roi_max_y: 1022
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 226
         roi_x_max: 946
@@ -1050,7 +1050,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 226
         roi_x_max: 946
@@ -1072,7 +1072,7 @@ scenes:
          roi_max_y: 600
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 452
         roi_x_max: 1172
@@ -1094,7 +1094,7 @@ scenes:
          roi_max_y: 811
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 452
         roi_x_max: 1172
@@ -1116,7 +1116,7 @@ scenes:
          roi_max_y: 1022
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 452
         roi_x_max: 1172
@@ -1138,7 +1138,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 452
         roi_x_max: 1172
@@ -1160,7 +1160,7 @@ scenes:
          roi_max_y: 600
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 678
         roi_x_max: 1398
@@ -1182,7 +1182,7 @@ scenes:
          roi_max_y: 811
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 678
         roi_x_max: 1398
@@ -1204,7 +1204,7 @@ scenes:
          roi_max_y: 1022
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 678
         roi_x_max: 1398
@@ -1226,7 +1226,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 678
         roi_x_max: 1398
@@ -1248,7 +1248,7 @@ scenes:
          roi_max_y: 600
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 904
         roi_x_max: 1624
@@ -1270,7 +1270,7 @@ scenes:
          roi_max_y: 811
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 904
         roi_x_max: 1624
@@ -1292,7 +1292,7 @@ scenes:
          roi_max_y: 1022
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 904
         roi_x_max: 1624
@@ -1314,7 +1314,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 904
         roi_x_max: 1624
@@ -1336,7 +1336,7 @@ scenes:
          roi_max_y: 650
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 780
@@ -1358,7 +1358,7 @@ scenes:
          roi_max_y: 844
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 780
@@ -1380,7 +1380,7 @@ scenes:
          roi_max_y: 1039
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 780
@@ -1402,7 +1402,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 780
@@ -1424,7 +1424,7 @@ scenes:
          roi_max_y: 650
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 211
         roi_x_max: 991
@@ -1446,7 +1446,7 @@ scenes:
          roi_max_y: 844
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 211
         roi_x_max: 991
@@ -1468,7 +1468,7 @@ scenes:
          roi_max_y: 1039
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 211
         roi_x_max: 991
@@ -1490,7 +1490,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 211
         roi_x_max: 991
@@ -1512,7 +1512,7 @@ scenes:
          roi_max_y: 650
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 422
         roi_x_max: 1202
@@ -1534,7 +1534,7 @@ scenes:
          roi_max_y: 844
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 422
         roi_x_max: 1202
@@ -1556,7 +1556,7 @@ scenes:
          roi_max_y: 1039
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 422
         roi_x_max: 1202
@@ -1578,7 +1578,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 422
         roi_x_max: 1202
@@ -1600,7 +1600,7 @@ scenes:
          roi_max_y: 650
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 633
         roi_x_max: 1413
@@ -1622,7 +1622,7 @@ scenes:
          roi_max_y: 844
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 633
         roi_x_max: 1413
@@ -1644,7 +1644,7 @@ scenes:
          roi_max_y: 1039
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 633
         roi_x_max: 1413
@@ -1666,7 +1666,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 633
         roi_x_max: 1413
@@ -1688,7 +1688,7 @@ scenes:
          roi_max_y: 650
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 844
         roi_x_max: 1624
@@ -1710,7 +1710,7 @@ scenes:
          roi_max_y: 844
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 844
         roi_x_max: 1624
@@ -1732,7 +1732,7 @@ scenes:
          roi_max_y: 1039
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 844
         roi_x_max: 1624
@@ -1754,7 +1754,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 844
         roi_x_max: 1624
@@ -1776,7 +1776,7 @@ scenes:
          roi_max_y: 700
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 840
@@ -1798,7 +1798,7 @@ scenes:
          roi_max_y: 878
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 840
@@ -1820,7 +1820,7 @@ scenes:
          roi_max_y: 1056
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 840
@@ -1842,7 +1842,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 840
@@ -1864,7 +1864,7 @@ scenes:
          roi_max_y: 700
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 196
         roi_x_max: 1036
@@ -1886,7 +1886,7 @@ scenes:
          roi_max_y: 878
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 196
         roi_x_max: 1036
@@ -1908,7 +1908,7 @@ scenes:
          roi_max_y: 1056
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 196
         roi_x_max: 1036
@@ -1930,7 +1930,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 196
         roi_x_max: 1036
@@ -1952,7 +1952,7 @@ scenes:
          roi_max_y: 700
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 392
         roi_x_max: 1232
@@ -1974,7 +1974,7 @@ scenes:
          roi_max_y: 878
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 392
         roi_x_max: 1232
@@ -1996,7 +1996,7 @@ scenes:
          roi_max_y: 1056
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 392
         roi_x_max: 1232
@@ -2018,7 +2018,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 392
         roi_x_max: 1232
@@ -2040,7 +2040,7 @@ scenes:
          roi_max_y: 700
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 588
         roi_x_max: 1428
@@ -2062,7 +2062,7 @@ scenes:
          roi_max_y: 878
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 588
         roi_x_max: 1428
@@ -2084,7 +2084,7 @@ scenes:
          roi_max_y: 1056
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 588
         roi_x_max: 1428
@@ -2106,7 +2106,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 588
         roi_x_max: 1428
@@ -2128,7 +2128,7 @@ scenes:
          roi_max_y: 700
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 784
         roi_x_max: 1624
@@ -2150,7 +2150,7 @@ scenes:
          roi_max_y: 878
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 784
         roi_x_max: 1624
@@ -2172,7 +2172,7 @@ scenes:
          roi_max_y: 1056
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 784
         roi_x_max: 1624
@@ -2194,7 +2194,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 784
         roi_x_max: 1624
@@ -2216,7 +2216,7 @@ scenes:
          roi_max_y: 750
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 900
@@ -2238,7 +2238,7 @@ scenes:
          roi_max_y: 911
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 900
@@ -2260,7 +2260,7 @@ scenes:
          roi_max_y: 1072
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 900
@@ -2282,7 +2282,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 900
@@ -2304,7 +2304,7 @@ scenes:
          roi_max_y: 750
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 181
         roi_x_max: 1081
@@ -2326,7 +2326,7 @@ scenes:
          roi_max_y: 911
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 181
         roi_x_max: 1081
@@ -2348,7 +2348,7 @@ scenes:
          roi_max_y: 1072
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 181
         roi_x_max: 1081
@@ -2370,7 +2370,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 181
         roi_x_max: 1081
@@ -2392,7 +2392,7 @@ scenes:
          roi_max_y: 750
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 362
         roi_x_max: 1262
@@ -2414,7 +2414,7 @@ scenes:
          roi_max_y: 911
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 362
         roi_x_max: 1262
@@ -2436,7 +2436,7 @@ scenes:
          roi_max_y: 1072
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 362
         roi_x_max: 1262
@@ -2458,7 +2458,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 362
         roi_x_max: 1262
@@ -2480,7 +2480,7 @@ scenes:
          roi_max_y: 750
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 543
         roi_x_max: 1443
@@ -2502,7 +2502,7 @@ scenes:
          roi_max_y: 911
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 543
         roi_x_max: 1443
@@ -2524,7 +2524,7 @@ scenes:
          roi_max_y: 1072
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 543
         roi_x_max: 1443
@@ -2546,7 +2546,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 543
         roi_x_max: 1443
@@ -2568,7 +2568,7 @@ scenes:
          roi_max_y: 750
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 724
         roi_x_max: 1624
@@ -2590,7 +2590,7 @@ scenes:
          roi_max_y: 911
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 724
         roi_x_max: 1624
@@ -2612,7 +2612,7 @@ scenes:
          roi_max_y: 1072
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 724
         roi_x_max: 1624
@@ -2634,7 +2634,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 724
         roi_x_max: 1624
@@ -2656,7 +2656,7 @@ scenes:
          roi_max_y: 800
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 960
@@ -2678,7 +2678,7 @@ scenes:
          roi_max_y: 944
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 960
@@ -2700,7 +2700,7 @@ scenes:
          roi_max_y: 1089
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 960
@@ -2722,7 +2722,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 0
         roi_x_max: 960
@@ -2744,7 +2744,7 @@ scenes:
          roi_max_y: 800
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 166
         roi_x_max: 1126
@@ -2766,7 +2766,7 @@ scenes:
          roi_max_y: 944
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 166
         roi_x_max: 1126
@@ -2788,7 +2788,7 @@ scenes:
          roi_max_y: 1089
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 166
         roi_x_max: 1126
@@ -2810,7 +2810,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 166
         roi_x_max: 1126
@@ -2832,7 +2832,7 @@ scenes:
          roi_max_y: 800
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 332
         roi_x_max: 1292
@@ -2854,7 +2854,7 @@ scenes:
          roi_max_y: 944
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 332
         roi_x_max: 1292
@@ -2876,7 +2876,7 @@ scenes:
          roi_max_y: 1089
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 332
         roi_x_max: 1292
@@ -2898,7 +2898,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 332
         roi_x_max: 1292
@@ -2920,7 +2920,7 @@ scenes:
          roi_max_y: 800
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 498
         roi_x_max: 1458
@@ -2942,7 +2942,7 @@ scenes:
          roi_max_y: 944
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 498
         roi_x_max: 1458
@@ -2964,7 +2964,7 @@ scenes:
          roi_max_y: 1089
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 498
         roi_x_max: 1458
@@ -2986,7 +2986,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 498
         roi_x_max: 1458
@@ -3008,7 +3008,7 @@ scenes:
          roi_max_y: 800
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 664
         roi_x_max: 1624
@@ -3030,7 +3030,7 @@ scenes:
          roi_max_y: 944
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 664
         roi_x_max: 1624
@@ -3052,7 +3052,7 @@ scenes:
          roi_max_y: 1089
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 664
         roi_x_max: 1624
@@ -3074,7 +3074,7 @@ scenes:
          roi_max_y: 1234
     observations:
     -
-        camera: Basler-21135424
+        camera: Basler1
         target: mytarget
         roi_x_min: 664
         roi_x_max: 1624

@@ -12,7 +12,6 @@ main()
   int roi_height;
   int image_width = 1624;
   int image_height = 1234;
-  std::string serial_number("21135424");
   float t1 = image_width;
   float t2 = image_height;
   float n1 = 5;
@@ -44,7 +43,7 @@ main()
 	fprintf(fp,"         roi_max_y: %d\n", y+roi_height);
 	fprintf(fp,"    observations:\n");
 	fprintf(fp,"    -\n");
-	fprintf(fp,"        camera: Basler-%s\n", serial_number.c_str());
+	fprintf(fp,"        camera: Basler1\n");
 	fprintf(fp,"        target: mytarget\n");
 	fprintf(fp,"        roi_x_min: %d\n", x);
 	fprintf(fp,"        roi_x_max: %d\n", x+roi_width);
