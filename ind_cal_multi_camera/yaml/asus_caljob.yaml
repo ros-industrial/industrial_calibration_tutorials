@@ -8,20 +8,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 600
+         roi_max_x: 150
          roi_min_y: 0
-         roi_max_y: 500
+         roi_max_y: 150
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 600
+        roi_x_max: 150
         roi_y_min: 0
-        roi_y_max: 500
+        roi_y_max: 150
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 1
@@ -30,20 +30,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 600
-         roi_min_y: 193
-         roi_max_y: 693
+         roi_max_x: 150
+         roi_min_y: 110
+         roi_max_y: 260
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 600
-        roi_y_min: 193
-        roi_y_max: 693
+        roi_x_max: 150
+        roi_y_min: 110
+        roi_y_max: 260
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 2
@@ -52,20 +52,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 600
-         roi_min_y: 386
-         roi_max_y: 886
+         roi_max_x: 150
+         roi_min_y: 220
+         roi_max_y: 370
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 600
-        roi_y_min: 386
-        roi_y_max: 886
+        roi_x_max: 150
+        roi_y_min: 220
+        roi_y_max: 370
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 3
@@ -74,20 +74,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 600
-         roi_min_y: 580
-         roi_max_y: 1080
+         roi_max_x: 150
+         roi_min_y: 330
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 600
-        roi_y_min: 580
-        roi_y_max: 1080
+        roi_x_max: 150
+        roi_y_min: 330
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 4
@@ -96,20 +96,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 330
-         roi_max_x: 930
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
          roi_min_y: 0
-         roi_max_y: 500
+         roi_max_y: 150
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 330
-        roi_x_max: 930
+        roi_x_min: 122
+        roi_x_max: 272
         roi_y_min: 0
-        roi_y_max: 500
+        roi_y_max: 150
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 5
@@ -118,20 +118,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 330
-         roi_max_x: 930
-         roi_min_y: 193
-         roi_max_y: 693
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 110
+         roi_max_y: 260
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 330
-        roi_x_max: 930
-        roi_y_min: 193
-        roi_y_max: 693
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 110
+        roi_y_max: 260
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 6
@@ -140,20 +140,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 330
-         roi_max_x: 930
-         roi_min_y: 386
-         roi_max_y: 886
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 220
+         roi_max_y: 370
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 330
-        roi_x_max: 930
-        roi_y_min: 386
-        roi_y_max: 886
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 220
+        roi_y_max: 370
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 7
@@ -162,20 +162,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 330
-         roi_max_x: 930
-         roi_min_y: 580
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 122
+         roi_max_x: 272
+         roi_min_y: 330
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 330
-        roi_x_max: 930
-        roi_y_min: 580
-        roi_y_max: 1080
+        roi_x_min: 122
+        roi_x_max: 272
+        roi_y_min: 330
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 8
@@ -184,20 +184,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 660
-         roi_max_x: 1260
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
          roi_min_y: 0
-         roi_max_y: 500
+         roi_max_y: 150
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 660
-        roi_x_max: 1260
+        roi_x_min: 245
+        roi_x_max: 395
         roi_y_min: 0
-        roi_y_max: 500
+        roi_y_max: 150
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 9
@@ -206,20 +206,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 660
-         roi_max_x: 1260
-         roi_min_y: 193
-         roi_max_y: 693
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 110
+         roi_max_y: 260
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 660
-        roi_x_max: 1260
-        roi_y_min: 193
-        roi_y_max: 693
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 110
+        roi_y_max: 260
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 10
@@ -228,20 +228,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 660
-         roi_max_x: 1260
-         roi_min_y: 386
-         roi_max_y: 886
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 220
+         roi_max_y: 370
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 660
-        roi_x_max: 1260
-        roi_y_min: 386
-        roi_y_max: 886
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 220
+        roi_y_max: 370
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 11
@@ -250,20 +250,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 660
-         roi_max_x: 1260
-         roi_min_y: 580
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 245
+         roi_max_x: 395
+         roi_min_y: 330
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 660
-        roi_x_max: 1260
-        roi_y_min: 580
-        roi_y_max: 1080
+        roi_x_min: 245
+        roi_x_max: 395
+        roi_y_min: 330
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 12
@@ -272,20 +272,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 990
-         roi_max_x: 1590
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
          roi_min_y: 0
-         roi_max_y: 500
+         roi_max_y: 150
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 990
-        roi_x_max: 1590
+        roi_x_min: 367
+        roi_x_max: 517
         roi_y_min: 0
-        roi_y_max: 500
+        roi_y_max: 150
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 13
@@ -294,20 +294,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 990
-         roi_max_x: 1590
-         roi_min_y: 193
-         roi_max_y: 693
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 110
+         roi_max_y: 260
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 990
-        roi_x_max: 1590
-        roi_y_min: 193
-        roi_y_max: 693
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 110
+        roi_y_max: 260
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 14
@@ -316,20 +316,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 990
-         roi_max_x: 1590
-         roi_min_y: 386
-         roi_max_y: 886
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 220
+         roi_max_y: 370
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 990
-        roi_x_max: 1590
-        roi_y_min: 386
-        roi_y_max: 886
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 220
+        roi_y_max: 370
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 15
@@ -338,20 +338,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 990
-         roi_max_x: 1590
-         roi_min_y: 580
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 367
+         roi_max_x: 517
+         roi_min_y: 330
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 990
-        roi_x_max: 1590
-        roi_y_min: 580
-        roi_y_max: 1080
+        roi_x_min: 367
+        roi_x_max: 517
+        roi_y_min: 330
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 16
@@ -360,20 +360,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1320
-         roi_max_x: 1920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
          roi_min_y: 0
-         roi_max_y: 500
+         roi_max_y: 150
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1320
-        roi_x_max: 1920
+        roi_x_min: 490
+        roi_x_max: 640
         roi_y_min: 0
-        roi_y_max: 500
+        roi_y_max: 150
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 17
@@ -382,20 +382,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1320
-         roi_max_x: 1920
-         roi_min_y: 193
-         roi_max_y: 693
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 110
+         roi_max_y: 260
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1320
-        roi_x_max: 1920
-        roi_y_min: 193
-        roi_y_max: 693
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 110
+        roi_y_max: 260
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 18
@@ -404,20 +404,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1320
-         roi_max_x: 1920
-         roi_min_y: 386
-         roi_max_y: 886
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 220
+         roi_max_y: 370
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1320
-        roi_x_max: 1920
-        roi_y_min: 386
-        roi_y_max: 886
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 220
+        roi_y_max: 370
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 19
@@ -426,20 +426,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1320
-         roi_max_x: 1920
-         roi_min_y: 580
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 490
+         roi_max_x: 640
+         roi_min_y: 330
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1320
-        roi_x_max: 1920
-        roi_y_min: 580
-        roi_y_max: 1080
+        roi_x_min: 490
+        roi_x_max: 640
+        roi_y_min: 330
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 20
@@ -448,20 +448,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 720
+         roi_max_x: 200
          roi_min_y: 0
-         roi_max_y: 600
+         roi_max_y: 200
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 720
+        roi_x_max: 200
         roi_y_min: 0
-        roi_y_max: 600
+        roi_y_max: 200
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 21
@@ -470,20 +470,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 720
-         roi_min_y: 160
-         roi_max_y: 760
+         roi_max_x: 200
+         roi_min_y: 93
+         roi_max_y: 293
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 720
-        roi_y_min: 160
-        roi_y_max: 760
+        roi_x_max: 200
+        roi_y_min: 93
+        roi_y_max: 293
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 22
@@ -492,20 +492,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 720
-         roi_min_y: 320
-         roi_max_y: 920
+         roi_max_x: 200
+         roi_min_y: 186
+         roi_max_y: 386
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 720
-        roi_y_min: 320
-        roi_y_max: 920
+        roi_x_max: 200
+        roi_y_min: 186
+        roi_y_max: 386
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 23
@@ -514,20 +514,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 720
-         roi_min_y: 480
-         roi_max_y: 1080
+         roi_max_x: 200
+         roi_min_y: 280
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 720
-        roi_y_min: 480
-        roi_y_max: 1080
+        roi_x_max: 200
+        roi_y_min: 280
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 24
@@ -536,20 +536,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 300
-         roi_max_x: 1020
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
          roi_min_y: 0
-         roi_max_y: 600
+         roi_max_y: 200
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 300
-        roi_x_max: 1020
+        roi_x_min: 110
+        roi_x_max: 310
         roi_y_min: 0
-        roi_y_max: 600
+        roi_y_max: 200
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 25
@@ -558,20 +558,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 300
-         roi_max_x: 1020
-         roi_min_y: 160
-         roi_max_y: 760
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 93
+         roi_max_y: 293
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 300
-        roi_x_max: 1020
-        roi_y_min: 160
-        roi_y_max: 760
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 93
+        roi_y_max: 293
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 26
@@ -580,20 +580,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 300
-         roi_max_x: 1020
-         roi_min_y: 320
-         roi_max_y: 920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 186
+         roi_max_y: 386
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 300
-        roi_x_max: 1020
-        roi_y_min: 320
-        roi_y_max: 920
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 186
+        roi_y_max: 386
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 27
@@ -602,20 +602,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 300
-         roi_max_x: 1020
-         roi_min_y: 480
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 110
+         roi_max_x: 310
+         roi_min_y: 280
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 300
-        roi_x_max: 1020
-        roi_y_min: 480
-        roi_y_max: 1080
+        roi_x_min: 110
+        roi_x_max: 310
+        roi_y_min: 280
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 28
@@ -624,20 +624,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 600
-         roi_max_x: 1320
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
          roi_min_y: 0
-         roi_max_y: 600
+         roi_max_y: 200
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 600
-        roi_x_max: 1320
+        roi_x_min: 220
+        roi_x_max: 420
         roi_y_min: 0
-        roi_y_max: 600
+        roi_y_max: 200
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 29
@@ -646,20 +646,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 600
-         roi_max_x: 1320
-         roi_min_y: 160
-         roi_max_y: 760
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 93
+         roi_max_y: 293
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 600
-        roi_x_max: 1320
-        roi_y_min: 160
-        roi_y_max: 760
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 93
+        roi_y_max: 293
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 30
@@ -668,20 +668,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 600
-         roi_max_x: 1320
-         roi_min_y: 320
-         roi_max_y: 920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 186
+         roi_max_y: 386
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 600
-        roi_x_max: 1320
-        roi_y_min: 320
-        roi_y_max: 920
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 186
+        roi_y_max: 386
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 31
@@ -690,20 +690,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 600
-         roi_max_x: 1320
-         roi_min_y: 480
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 220
+         roi_max_x: 420
+         roi_min_y: 280
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 600
-        roi_x_max: 1320
-        roi_y_min: 480
-        roi_y_max: 1080
+        roi_x_min: 220
+        roi_x_max: 420
+        roi_y_min: 280
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 32
@@ -712,20 +712,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 900
-         roi_max_x: 1620
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
          roi_min_y: 0
-         roi_max_y: 600
+         roi_max_y: 200
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 900
-        roi_x_max: 1620
+        roi_x_min: 330
+        roi_x_max: 530
         roi_y_min: 0
-        roi_y_max: 600
+        roi_y_max: 200
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 33
@@ -734,20 +734,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 900
-         roi_max_x: 1620
-         roi_min_y: 160
-         roi_max_y: 760
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 93
+         roi_max_y: 293
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 900
-        roi_x_max: 1620
-        roi_y_min: 160
-        roi_y_max: 760
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 93
+        roi_y_max: 293
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 34
@@ -756,20 +756,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 900
-         roi_max_x: 1620
-         roi_min_y: 320
-         roi_max_y: 920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 186
+         roi_max_y: 386
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 900
-        roi_x_max: 1620
-        roi_y_min: 320
-        roi_y_max: 920
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 186
+        roi_y_max: 386
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 35
@@ -778,20 +778,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 900
-         roi_max_x: 1620
-         roi_min_y: 480
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 330
+         roi_max_x: 530
+         roi_min_y: 280
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 900
-        roi_x_max: 1620
-        roi_y_min: 480
-        roi_y_max: 1080
+        roi_x_min: 330
+        roi_x_max: 530
+        roi_y_min: 280
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 36
@@ -800,20 +800,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1200
-         roi_max_x: 1920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
          roi_min_y: 0
-         roi_max_y: 600
+         roi_max_y: 200
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1200
-        roi_x_max: 1920
+        roi_x_min: 440
+        roi_x_max: 640
         roi_y_min: 0
-        roi_y_max: 600
+        roi_y_max: 200
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 37
@@ -822,20 +822,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1200
-         roi_max_x: 1920
-         roi_min_y: 160
-         roi_max_y: 760
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 93
+         roi_max_y: 293
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1200
-        roi_x_max: 1920
-        roi_y_min: 160
-        roi_y_max: 760
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 93
+        roi_y_max: 293
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 38
@@ -844,20 +844,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1200
-         roi_max_x: 1920
-         roi_min_y: 320
-         roi_max_y: 920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 186
+         roi_max_y: 386
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1200
-        roi_x_max: 1920
-        roi_y_min: 320
-        roi_y_max: 920
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 186
+        roi_y_max: 386
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 39
@@ -866,20 +866,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1200
-         roi_max_x: 1920
-         roi_min_y: 480
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 440
+         roi_max_x: 640
+         roi_min_y: 280
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1200
-        roi_x_max: 1920
-        roi_y_min: 480
-        roi_y_max: 1080
+        roi_x_min: 440
+        roi_x_max: 640
+        roi_y_min: 280
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 40
@@ -888,20 +888,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 840
+         roi_max_x: 250
          roi_min_y: 0
-         roi_max_y: 700
+         roi_max_y: 250
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 840
+        roi_x_max: 250
         roi_y_min: 0
-        roi_y_max: 700
+        roi_y_max: 250
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 41
@@ -910,20 +910,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 840
-         roi_min_y: 126
-         roi_max_y: 826
+         roi_max_x: 250
+         roi_min_y: 76
+         roi_max_y: 326
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 840
-        roi_y_min: 126
-        roi_y_max: 826
+        roi_x_max: 250
+        roi_y_min: 76
+        roi_y_max: 326
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 42
@@ -932,20 +932,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 840
-         roi_min_y: 253
-         roi_max_y: 953
+         roi_max_x: 250
+         roi_min_y: 153
+         roi_max_y: 403
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 840
-        roi_y_min: 253
-        roi_y_max: 953
+        roi_x_max: 250
+        roi_y_min: 153
+        roi_y_max: 403
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 43
@@ -954,20 +954,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 840
-         roi_min_y: 380
-         roi_max_y: 1080
+         roi_max_x: 250
+         roi_min_y: 230
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 840
-        roi_y_min: 380
-        roi_y_max: 1080
+        roi_x_max: 250
+        roi_y_min: 230
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 44
@@ -976,20 +976,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 270
-         roi_max_x: 1110
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
          roi_min_y: 0
-         roi_max_y: 700
+         roi_max_y: 250
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 270
-        roi_x_max: 1110
+        roi_x_min: 97
+        roi_x_max: 347
         roi_y_min: 0
-        roi_y_max: 700
+        roi_y_max: 250
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 45
@@ -998,20 +998,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 270
-         roi_max_x: 1110
-         roi_min_y: 126
-         roi_max_y: 826
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 76
+         roi_max_y: 326
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 270
-        roi_x_max: 1110
-        roi_y_min: 126
-        roi_y_max: 826
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 76
+        roi_y_max: 326
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 46
@@ -1020,20 +1020,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 270
-         roi_max_x: 1110
-         roi_min_y: 253
-         roi_max_y: 953
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 153
+         roi_max_y: 403
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 270
-        roi_x_max: 1110
-        roi_y_min: 253
-        roi_y_max: 953
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 153
+        roi_y_max: 403
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 47
@@ -1042,20 +1042,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 270
-         roi_max_x: 1110
-         roi_min_y: 380
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 97
+         roi_max_x: 347
+         roi_min_y: 230
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 270
-        roi_x_max: 1110
-        roi_y_min: 380
-        roi_y_max: 1080
+        roi_x_min: 97
+        roi_x_max: 347
+        roi_y_min: 230
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 48
@@ -1064,20 +1064,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 540
-         roi_max_x: 1380
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
          roi_min_y: 0
-         roi_max_y: 700
+         roi_max_y: 250
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 540
-        roi_x_max: 1380
+        roi_x_min: 195
+        roi_x_max: 445
         roi_y_min: 0
-        roi_y_max: 700
+        roi_y_max: 250
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 49
@@ -1086,20 +1086,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 540
-         roi_max_x: 1380
-         roi_min_y: 126
-         roi_max_y: 826
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 76
+         roi_max_y: 326
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 540
-        roi_x_max: 1380
-        roi_y_min: 126
-        roi_y_max: 826
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 76
+        roi_y_max: 326
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 50
@@ -1108,20 +1108,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 540
-         roi_max_x: 1380
-         roi_min_y: 253
-         roi_max_y: 953
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 153
+         roi_max_y: 403
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 540
-        roi_x_max: 1380
-        roi_y_min: 253
-        roi_y_max: 953
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 153
+        roi_y_max: 403
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 51
@@ -1130,20 +1130,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 540
-         roi_max_x: 1380
-         roi_min_y: 380
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 195
+         roi_max_x: 445
+         roi_min_y: 230
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 540
-        roi_x_max: 1380
-        roi_y_min: 380
-        roi_y_max: 1080
+        roi_x_min: 195
+        roi_x_max: 445
+        roi_y_min: 230
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 52
@@ -1152,20 +1152,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 810
-         roi_max_x: 1650
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
          roi_min_y: 0
-         roi_max_y: 700
+         roi_max_y: 250
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 810
-        roi_x_max: 1650
+        roi_x_min: 292
+        roi_x_max: 542
         roi_y_min: 0
-        roi_y_max: 700
+        roi_y_max: 250
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 53
@@ -1174,20 +1174,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 810
-         roi_max_x: 1650
-         roi_min_y: 126
-         roi_max_y: 826
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 76
+         roi_max_y: 326
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 810
-        roi_x_max: 1650
-        roi_y_min: 126
-        roi_y_max: 826
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 76
+        roi_y_max: 326
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 54
@@ -1196,20 +1196,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 810
-         roi_max_x: 1650
-         roi_min_y: 253
-         roi_max_y: 953
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 153
+         roi_max_y: 403
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 810
-        roi_x_max: 1650
-        roi_y_min: 253
-        roi_y_max: 953
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 153
+        roi_y_max: 403
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 55
@@ -1218,20 +1218,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 810
-         roi_max_x: 1650
-         roi_min_y: 380
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 292
+         roi_max_x: 542
+         roi_min_y: 230
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 810
-        roi_x_max: 1650
-        roi_y_min: 380
-        roi_y_max: 1080
+        roi_x_min: 292
+        roi_x_max: 542
+        roi_y_min: 230
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 56
@@ -1240,20 +1240,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1080
-         roi_max_x: 1920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
          roi_min_y: 0
-         roi_max_y: 700
+         roi_max_y: 250
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1080
-        roi_x_max: 1920
+        roi_x_min: 390
+        roi_x_max: 640
         roi_y_min: 0
-        roi_y_max: 700
+        roi_y_max: 250
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 57
@@ -1262,20 +1262,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1080
-         roi_max_x: 1920
-         roi_min_y: 126
-         roi_max_y: 826
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 76
+         roi_max_y: 326
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1080
-        roi_x_max: 1920
-        roi_y_min: 126
-        roi_y_max: 826
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 76
+        roi_y_max: 326
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 58
@@ -1284,20 +1284,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1080
-         roi_max_x: 1920
-         roi_min_y: 253
-         roi_max_y: 953
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 153
+         roi_max_y: 403
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1080
-        roi_x_max: 1920
-        roi_y_min: 253
-        roi_y_max: 953
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 153
+        roi_y_max: 403
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 59
@@ -1306,20 +1306,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 1080
-         roi_max_x: 1920
-         roi_min_y: 380
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 390
+         roi_max_x: 640
+         roi_min_y: 230
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 1080
-        roi_x_max: 1920
-        roi_y_min: 380
-        roi_y_max: 1080
+        roi_x_min: 390
+        roi_x_max: 640
+        roi_y_min: 230
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 60
@@ -1328,20 +1328,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 960
+         roi_max_x: 300
          roi_min_y: 0
-         roi_max_y: 800
+         roi_max_y: 300
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 960
+        roi_x_max: 300
         roi_y_min: 0
-        roi_y_max: 800
+        roi_y_max: 300
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 61
@@ -1350,20 +1350,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 960
-         roi_min_y: 93
-         roi_max_y: 893
+         roi_max_x: 300
+         roi_min_y: 60
+         roi_max_y: 360
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 960
-        roi_y_min: 93
-        roi_y_max: 893
+        roi_x_max: 300
+        roi_y_min: 60
+        roi_y_max: 360
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 62
@@ -1372,20 +1372,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 960
-         roi_min_y: 186
-         roi_max_y: 986
+         roi_max_x: 300
+         roi_min_y: 120
+         roi_max_y: 420
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 960
-        roi_y_min: 186
-        roi_y_max: 986
+        roi_x_max: 300
+        roi_y_min: 120
+        roi_y_max: 420
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 63
@@ -1394,20 +1394,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
          roi_min_x: 0
-         roi_max_x: 960
-         roi_min_y: 280
-         roi_max_y: 1080
+         roi_max_x: 300
+         roi_min_y: 180
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
         roi_x_min: 0
-        roi_x_max: 960
-        roi_y_min: 280
-        roi_y_max: 1080
+        roi_x_max: 300
+        roi_y_min: 180
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 64
@@ -1416,20 +1416,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 240
-         roi_max_x: 1200
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
          roi_min_y: 0
-         roi_max_y: 800
+         roi_max_y: 300
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 240
-        roi_x_max: 1200
+        roi_x_min: 85
+        roi_x_max: 385
         roi_y_min: 0
-        roi_y_max: 800
+        roi_y_max: 300
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 65
@@ -1438,20 +1438,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 240
-         roi_max_x: 1200
-         roi_min_y: 93
-         roi_max_y: 893
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 60
+         roi_max_y: 360
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 240
-        roi_x_max: 1200
-        roi_y_min: 93
-        roi_y_max: 893
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 60
+        roi_y_max: 360
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 66
@@ -1460,20 +1460,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 240
-         roi_max_x: 1200
-         roi_min_y: 186
-         roi_max_y: 986
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 120
+         roi_max_y: 420
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 240
-        roi_x_max: 1200
-        roi_y_min: 186
-        roi_y_max: 986
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 120
+        roi_y_max: 420
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 67
@@ -1482,20 +1482,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 240
-         roi_max_x: 1200
-         roi_min_y: 280
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 85
+         roi_max_x: 385
+         roi_min_y: 180
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 240
-        roi_x_max: 1200
-        roi_y_min: 280
-        roi_y_max: 1080
+        roi_x_min: 85
+        roi_x_max: 385
+        roi_y_min: 180
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 68
@@ -1504,20 +1504,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 480
-         roi_max_x: 1440
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
          roi_min_y: 0
-         roi_max_y: 800
+         roi_max_y: 300
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 480
-        roi_x_max: 1440
+        roi_x_min: 170
+        roi_x_max: 470
         roi_y_min: 0
-        roi_y_max: 800
+        roi_y_max: 300
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 69
@@ -1526,20 +1526,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 480
-         roi_max_x: 1440
-         roi_min_y: 93
-         roi_max_y: 893
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 60
+         roi_max_y: 360
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 480
-        roi_x_max: 1440
-        roi_y_min: 93
-        roi_y_max: 893
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 60
+        roi_y_max: 360
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 70
@@ -1548,20 +1548,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 480
-         roi_max_x: 1440
-         roi_min_y: 186
-         roi_max_y: 986
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 120
+         roi_max_y: 420
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 480
-        roi_x_max: 1440
-        roi_y_min: 186
-        roi_y_max: 986
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 120
+        roi_y_max: 420
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 71
@@ -1570,20 +1570,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 480
-         roi_max_x: 1440
-         roi_min_y: 280
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 170
+         roi_max_x: 470
+         roi_min_y: 180
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 480
-        roi_x_max: 1440
-        roi_y_min: 280
-        roi_y_max: 1080
+        roi_x_min: 170
+        roi_x_max: 470
+        roi_y_min: 180
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 72
@@ -1592,20 +1592,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 720
-         roi_max_x: 1680
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
          roi_min_y: 0
-         roi_max_y: 800
+         roi_max_y: 300
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 720
-        roi_x_max: 1680
+        roi_x_min: 255
+        roi_x_max: 555
         roi_y_min: 0
-        roi_y_max: 800
+        roi_y_max: 300
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 73
@@ -1614,20 +1614,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 720
-         roi_max_x: 1680
-         roi_min_y: 93
-         roi_max_y: 893
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 60
+         roi_max_y: 360
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 720
-        roi_x_max: 1680
-        roi_y_min: 93
-        roi_y_max: 893
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 60
+        roi_y_max: 360
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 74
@@ -1636,20 +1636,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 720
-         roi_max_x: 1680
-         roi_min_y: 186
-         roi_max_y: 986
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 120
+         roi_max_y: 420
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 720
-        roi_x_max: 1680
-        roi_y_min: 186
-        roi_y_max: 986
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 120
+        roi_y_max: 420
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 75
@@ -1658,20 +1658,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 720
-         roi_max_x: 1680
-         roi_min_y: 280
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 255
+         roi_max_x: 555
+         roi_min_y: 180
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 720
-        roi_x_max: 1680
-        roi_y_min: 280
-        roi_y_max: 1080
+        roi_x_min: 255
+        roi_x_max: 555
+        roi_y_min: 180
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 76
@@ -1680,20 +1680,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 960
-         roi_max_x: 1920
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
          roi_min_y: 0
-         roi_max_y: 800
+         roi_max_y: 300
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 960
-        roi_x_max: 1920
+        roi_x_min: 340
+        roi_x_max: 640
         roi_y_min: 0
-        roi_y_max: 800
+        roi_y_max: 300
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 77
@@ -1702,20 +1702,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 960
-         roi_max_x: 1920
-         roi_min_y: 93
-         roi_max_y: 893
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 60
+         roi_max_y: 360
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 960
-        roi_x_max: 1920
-        roi_y_min: 93
-        roi_y_max: 893
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 60
+        roi_y_max: 360
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 78
@@ -1724,20 +1724,20 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 960
-         roi_max_x: 1920
-         roi_min_y: 186
-         roi_max_y: 986
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 120
+         roi_max_y: 420
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 960
-        roi_x_max: 1920
-        roi_y_min: 186
-        roi_y_max: 986
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 120
+        roi_y_max: 420
         cost_type: CameraReprjErrorWithDistortionPK
 -
     scene_id: 79
@@ -1746,18 +1746,19 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
-         target_type: 2
-         roi_min_x: 960
-         roi_max_x: 1920
-         roi_min_y: 280
-         roi_max_y: 1080
+         image_topic: /asus1/rgb/image_raw
+         target_type: 1
+         roi_min_x: 340
+         roi_max_x: 640
+         roi_min_y: 180
+         roi_max_y: 480
     observations:
     -
-        camera: Basler-21135424
+        camera: asus1
         target: mytarget
-        roi_x_min: 960
-        roi_x_max: 1920
-        roi_y_min: 280
-        roi_y_max: 1080
+        roi_x_min: 340
+        roi_x_max: 640
+        roi_y_min: 180
+        roi_y_max: 480
         cost_type: CameraReprjErrorWithDistortionPK
+optimization_parameters: xx

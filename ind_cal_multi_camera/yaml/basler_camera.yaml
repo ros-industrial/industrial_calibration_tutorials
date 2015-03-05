@@ -1,24 +1,24 @@
 ---
 
-moving_cameras:
+static_cameras:
  -
-    camera_name: Basler-21511093
-    camera_optical_frame: /Basler1_optical_fame
+    camera_name: Basler-21135424
+    camera_optical_frame: /Basler1_optical_frame
     trigger: NO_WAIT_TRIGGER
     image_topic: /basler1/rgb/image
-    angle_axis_ax: 0.0
+    angle_axis_ax: 3.14
     angle_axis_ay: 0.0
     angle_axis_az: 0.0
     position_x: 0.0
     position_y: 0.0
-    position_z: 0.0
+    position_z: 1.0
     transform_interface: default_ti
-    focal_length_x: 1000
-    focal_length_y: 1000
-    center_x: 500
-    center_y: 500
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
+    focal_length_x: 3528.3
+    focal_length_y: 3518.3
+    center_x: 868.9
+    center_y: 679.9
+    distortion_k1: -0.053647
+    distortion_k2: 0.193612
+    distortion_k3: 1.055632
     distortion_p1: 0.00
     distortion_p2: 0.00
