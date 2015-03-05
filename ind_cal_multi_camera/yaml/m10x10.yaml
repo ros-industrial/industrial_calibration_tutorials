@@ -1,6 +1,6 @@
 ---
 
-static_targets:
+moving_targets:
 -
      target_name: mytarget
      target_type: 2
