@@ -2,7 +2,7 @@
 
 static_cameras:
  -
-    camera_name: Basler-21135424
+    camera_name: Basler1
     camera_optical_frame: /Basler1_optical_frame
     trigger: NO_WAIT_TRIGGER
     image_topic: /basler1/rgb/image
