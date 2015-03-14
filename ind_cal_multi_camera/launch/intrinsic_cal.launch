@@ -77,8 +77,6 @@
        camera_file: "asus_camera.yaml"
        target_file: "m10x10.yaml"
        cal_job_file: "asus_caljob.yaml"
-       store_results_package_name: "ind_cal_multi_camera"
-       store_results_file_name: "intrinsic.launch"
      </rosparam>
    </node> 
 

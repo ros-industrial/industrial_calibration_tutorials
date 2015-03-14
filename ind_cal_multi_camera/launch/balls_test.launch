@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find ind_cal_multi_camera)/config/rosconsole.config" />
+
+   <!--arg name="basler_sn" default="21511093"/-->
+   <!--arg name="basler_sn" default="21511083"/-->
+   <arg name="basler_sn" default="21135424"/>
+
+
+   <!-- Basler camera node   -->
+   <node pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
+     <param name="camera_id" value="Basler-$(arg basler_sn)"/>
+     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="exposure_mode" value="fixed"/>
+     <param name="exposure_time" value="25960"/>
+     <param name="auto_white_balance_once" value="false"/>
+     <param name="gain_mode" value="fixed"/>
+     <param name="gain" value="0"/>
+     <param name="digital_shift" value="0"/>
+     <param name="mtu" value="1500"/>
+     <param name="bin_x" value="1"/>
+     <param name="bin_y" value="1"/>
+     <param name="roi_x" value="0"/>
+     <param name="roi_y" value="0"/>
+     <param name="roi_width" value="1624"/>
+     <param name="roi_height" value="1234"/>
+     <param name="frame_rate" value="10"/>
+     <remap from="image" to="basler1/rgb/image_raw"/>
+   </node>
+
+   <node pkg="nodelet" type="nodelet" name="image_proc_nodelet"  args="manager"/>
+      <node pkg="nodelet" type="nodelet" name="debayer" args="load image_proc/debayer image_proc_nodelet">
+      <remap from="image_raw" to="basler1/rgb/image_raw"/>
+      <remap from="image_color" to="basler1/rgb/image"/>
+   </node>
+
+
+   <!-- Launch the extrinsic calibration service -->
+   <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
+     <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <param name="use_circle_detector" value="false"/>
+     <param name="white_blobs" value="true"/>
+     <rosparam>
+       camera_file: "basler_camera.yaml"
+       target_file: "balls.yaml"
+       cal_job_file: "balls_caljob.yaml"
+     </rosparam>
+   </node> 
+
+   <!-- Start gui with calibration button -->
+   <node name="cal_gui" pkg="calibrate_gui" type="calibrate_gui" />
+
+   <!-- Start scene trigger node -->
+   <node name="scene_trigger" pkg="industrial_extrinsic_cal" type="camera_observer_scene_trigger" output="screen" >
+	<param name="target_type" value="4" />
+	<param name="pattern_rows" value="10" />
+	<param name="pattern_cols" value="10" />
+	<param name="red_h_min" value="0"/>
+	<param name="red_h_max" value="50"/>
+	<param name="red_s_min" value="40"/>
+	<param name="red_s_max" value="140"/>
+	<param name="red_v_min" value="100"/>
+	<param name="red_v_max" value="255"/>
+	<param name="yellow_h_min" value="0"/>
+	<param name="yellow_h_max" value="40"/>
+	<param name="yellow_s_min" value="110"/>
+	<param name="yellow_s_max" value="255"/>
+	<param name="yellow_v_min" value="50"/>
+	<param name="yellow_v_max" value="255"/>
+	<param name="green_h_min" value="40"/>
+	<param name="green_h_max" value="80"/>
+	<param name="green_s_min" value="140"/>
+	<param name="green_s_max" value="255"/>
+	<param name="green_v_min" value="0"/>
+	<param name="green_v_max" value="255"/>
+	<param name="morph_size" value="3"/>
+	<param name="debug_red" value="true"/>
+	<param name="debug_green" value="true"/>
+	<param name="debug_yellow" value="true"/>
+	<param name="use_circle_detector" value="true"/>
+	<param name="white_blobs" value="false"/>
+   </node>
+
+   <node name="results_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_results_image"/>
+   </node>
+
+   <node name="raw_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_raw_image"/>
+   </node>
+
+   <node name="unnecessary_view" pkg="image_view" type="image_view" >
+              <remap  from="image" to="/basler1/rgb/image"/>
+   </node>
+
+</launch>
