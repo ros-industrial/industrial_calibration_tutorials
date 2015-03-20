@@ -7,33 +7,29 @@
    <!--arg name="basler_sn" default="21511083"/-->
    <!--arg name="basler_sn" default="21135424"/-->
    <arg name="basler_sn" default="21565453"/>
+   <arg name="camera_number" default="1"/>
+   <arg name="camera_id" default="21565453"/>
+   <arg name="exposure_time" default="4000"/>
+   <arg name="acquisition_rate" default="20"/>
 
-
-   <!-- Basler camera node   -->
-   <node pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
-     <param name="camera_id" value="Basler-$(arg basler_sn)"/>
-     <param name="pixel_format" value="bayer_bggr8"/>
-     <param name="exposure_mode" value="fixed"/>
-     <param name="exposure_time" value="25960"/>
-     <param name="auto_white_balance_once" value="false"/>
-     <param name="gain_mode" value="fixed"/>
-     <param name="gain" value="0"/>
-     <param name="digital_shift" value="0"/>
-     <param name="mtu" value="1500"/>
-     <param name="bin_x" value="1"/>
-     <param name="bin_y" value="1"/>
-     <param name="roi_x" value="0"/>
-     <param name="roi_y" value="0"/>
-     <param name="roi_width" value="1624"/>
-     <param name="roi_height" value="1234"/>
-     <param name="frame_rate" value="10"/>
-     <remap from="image" to="basler1/rgb/image_raw"/>
-   </node>
+  <!-- Basler camera node   -->
+  <node pkg="camera_aravis" type="camnode" name="Basler$(arg camera_number)">
+    <param name="guid" value="Basler-$(arg camera_id)"/>
+    <param name="ExposureAuto" value="Off" /> 
+    <param name="GainAuto" value="auto_off" />
+    <param name="ExposureTimeAbs" value="$(arg exposure_time)" />
+    <param name="Gain" value="1.0" />
+    <param name="AcquisitionFrameRate" value="$(arg acquisition_rate)" />
+    <param name="frame_id" value="Basler$(arg camera_number)_optical_frame"/>
+    <param name="TriggerMode" value="Off" />
+    <param name="TriggerSource" value="Line1" />
+    <param name="url" value="file://$(find nist_cal)/camera_info/Basler$(arg camera_number).yaml"/>
+  </node>
 
    <node pkg="nodelet" type="nodelet" name="image_proc_nodelet"  args="manager"/>
       <node pkg="nodelet" type="nodelet" name="debayer" args="load image_proc/debayer image_proc_nodelet">
-      <remap from="image_raw" to="basler1/rgb/image_raw"/>
-      <remap from="image_color" to="basler1/rgb/image"/>
+      <remap from="image_raw" to="Basler$(arg camera_number)/image_raw"/>
+      <remap from="image_color" to="basler$(arg camera_number)/rgb/image"/>
    </node>
 
 
@@ -92,7 +88,7 @@
    </node>
 
    <node name="unnecessary_view" pkg="image_view" type="image_view" >
-              <remap  from="image" to="/basler1/rgb/image"/>
+              <remap  from="image" to="/basler$(arg camera_number)/rgb/image"/>
    </node>
 
 </launch>
