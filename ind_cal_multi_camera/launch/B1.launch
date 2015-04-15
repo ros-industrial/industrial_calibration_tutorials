@@ -1,0 +1,24 @@
+<launch>
+
+
+  <!-- Basler camera node   -->
+  <node pkg="camera_aravis" type="camnode" name="Basler1" output="screen">
+    <param name="guid" value="Basler-21499591"/>
+    <param name="ExposureAuto" value="Once" /> 
+    <param name="GainAuto" value="Once" />
+    <param name="ExposureTimeAbs" value="2000.0" />
+    <param name="Gain" value="1.0" />
+    <param name="AcquisitionFrameRate" value="20.0" />
+    <param name="frame_id" value="Basler1_optical_frame"/>
+    <param name="TriggerMode" value="Off" />
+    <param name="TriggerSource" value="Line1" />
+    <param name="PixelFormat" value="Mono8"/>
+  </node>
+
+
+  <node pkg="image_view" type="image_view" name="debug1_view" >
+   <remap from="image" to="Basler1/image_raw"/>
+  </node>
+
+
+</launch>

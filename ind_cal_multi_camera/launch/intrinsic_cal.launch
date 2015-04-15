@@ -8,7 +8,6 @@
    <arg name="asus_camera_name" default="asus1"/>
    <arg name="asus_calprefix" default="1"/>
 
-
    <arg name="basler" default="true" />
    <!--arg name="basler_sn" default="21511093"/-->
    <!--arg name="basler_sn" default="21511083"/-->
