@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<launch>
+
+   <!-- arguments for this file -->
+   <arg name="gui" default="False" />
+   <arg name="robot1" default="camera_scene" />
+   <arg name="xacro_model" default="$(find ind_cal_multi_camera)/urdf/camera_scene.xacro" />
+
+  <!-- Launch the basler camera nodes -->
+
+  <!-- Basler camera node   -->
+ <!-- Basler camera node   -->
+  <node pkg="camera_aravis" type="camnode" name="Basler1" output="screen">
+    <param name="guid" value="Basler-21499591"/>
+    <param name="ExposureAuto" value="Once" /> 
+    <param name="GainAuto" value="Once" />
+    <param name="ExposureTimeAbs" value="2000.0" />
+    <param name="Gain" value="1.0" />
+    <param name="AcquisitionFrameRate" value="20.0" />
+    <param name="frame_id" value="Basler1_optical_frame"/>
+    <param name="TriggerMode" value="Off" />
+    <param name="TriggerSource" value="Line1" />
+    <param name="PixelFormat" value="Mono8"/>
+  </node>
+
+  <!-- Basler camera node   -->
+  <node pkg="camera_aravis" type="camnode" name="Basler2" output="screen">
+    <param name="guid" value="Basler-21511093"/>
+    <param name="ExposureAuto" value="Once" /> 
+    <param name="GainAuto" value="Once" />
+    <param name="ExposureTimeAbs" value="2000.0" />
+    <param name="Gain" value="1.0" />
+    <param name="AcquisitionFrameRate" value="20.0" />
+    <param name="frame_id" value="Basler2_optical_frame"/>
+    <param name="TriggerMode" value="Off" />
+    <param name="TriggerSource" value="Line1" />
+    <param name="PixelFormat" value="Mono8"/>
+  </node>
+
+   <!-- Launch the asus camera nodes -->
+  <!-- Bus 2, device 1-->
+  <include file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
+    <arg name="topic_ns" value="asus1" />
+    <arg name="tf_prefix" value="asus1" />
+    <arg name="cal_prefix" value="1" />
+    <arg name="device_id" value="2@1" />
+    <arg name="publish_tf" value="false" />
+  </include>
+
+  <!-- Bus 2, device 1-->
+  <include file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
+    <arg name="topic_ns" value="asus2" />
+    <arg name="tf_prefix" value="asus2" />
+    <arg name="cal_prefix" value="2" />
+    <arg name="device_id" value="3@1" />
+    <arg name="publish_tf" value="false" />
+  </include>
+
+
+   <!-- Launch the extrinsic calibration service -->
+   <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
+     <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <rosparam>
+       camera_file: "camera_scene_cameras.yaml"
+       target_file: "camera_scene_targets.yaml"
+       cal_job_file: "camera_scene_caljob.yaml"
+       store_results_package_name: "ind_cal_multi_camera"
+       store_results_file_name: "camera_scene_transforms.launch"
+     </rosparam>
+   </node> 
+
+   <!-- Load the xacro file of the tower and cameras onto the parameter server as a robot description -->
+   <param name="$(arg robot1)/robot_description" command="$(find xacro)/xacro.py $(arg xacro_model)" />
+   <param name="use_gui" value="$(arg gui)" />
+
+   <!-- Launch robot state publishers for scene -->
+   <node ns="$(arg robot1)" name="camera_scene_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
+            <!--param name="tf_prefix" value="" /-->
+            <param name="publish_frequency" value="50" />
+    </node>
+
+   <!-- Launch Rviz -->
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ind_cal_multi_camera)/camera_scene.rviz"/>
+
+   <!-- Launch mutable joint state publisher for calibratable transforms -->
+   <node  name="camera_locs" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen">
+       <param name="mutableJointStateYamlFile" value="$(find ind_cal_multi_camera)/yaml/camera_scene_mutable_joint_states.yaml" />
+       <remap from="mutable_joint_states" to="$(arg robot1)/joint_states" />
+   </node>
+
+
+</launch>

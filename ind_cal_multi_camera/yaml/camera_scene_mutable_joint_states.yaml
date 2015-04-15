@@ -1,15 +1,3 @@
-true
----
-This is a simple list of mutable joint states
----
-true
----
-each line has the form
----
-true
----
-"joint_name: <double_value>"
----
 asus1_link_yaw_joint: 0.0
 asus1_link_pitch_joint: 0.0
 asus1_link_roll_joint: 0.0
@@ -22,3 +10,15 @@ asus2_link_roll_joint: 0.0
 asus2_link_x_joint: 0.3
 asus2_link_y_joint: 0.0
 asus2_link_z_joint: 1.0
+Basler1_yaw_joint: -1.5708
+Basler1_pitch_joint: 0.0
+Basler1_roll_joint: -1.5708
+Basler1_x_joint: 0.3
+Basler1_y_joint: 0.0
+Basler1_z_joint: 1.0
+Basler2_yaw_joint: -1.5708
+Basler2_pitch_joint: 0.0
+Basler2_roll_joint: -1.5708
+Basler2_x_joint: 0.3
+Basler2_y_joint: 0.0
+Basler2_z_joint: 1.0
