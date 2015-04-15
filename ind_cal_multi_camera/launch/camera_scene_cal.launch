@@ -54,8 +54,6 @@
        camera_file: "camera_scene_cameras.yaml"
        target_file: "camera_scene_targets.yaml"
        cal_job_file: "camera_scene_caljob.yaml"
-       store_results_package_name: "ind_cal_multi_camera"
-       store_results_file_name: "camera_scene_transforms.launch"
      </rosparam>
    </node> 
 

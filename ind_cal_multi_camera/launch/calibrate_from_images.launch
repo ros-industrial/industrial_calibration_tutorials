@@ -18,8 +18,6 @@
        camera_file: "scan_n_plan_cameras.yaml"
        target_file: "scan_n_plan_targets.yaml"
        cal_job_file: "scan_n_plan_caljob.yaml"
-       store_results_package_name: "ind_cal_multi_camera"
-       store_results_file_name: "tower_transforms.launch"
      </rosparam>
    </node> 
 
