@@ -1,0 +1,136 @@
+---
+reference_frame: world
+scenes:
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -1.23052
+        - -2.5904
+        - 1.88601
+        - -0.744654
+        - -1.03218
+        - -5.57186
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -1.84727
+        - -2.36217
+        - 1.2409
+        - -0.313588
+        - -1.04561
+        - -4.96842
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -1.84727
+        - -2.3622
+        - 1.24091
+        - -0.313577
+        - -1.04576
+        - -4.62987
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -2.49725
+        - -2.84762
+        - 1.40436
+        - 0.129345
+        - -1.58581
+        - -4.10296
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -1.63109
+        - -2.84759
+        - 1.40433
+        - 0.129357
+        - -1.58579
+        - -4.10298
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -2.39376
+        - -2.47067
+        - 1.06255
+        - -0.0418084
+        - -1.88753
+        - -4.10304
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -1.05352
+        - -2.7207
+        - 1.45228
+        - -0.255553
+        - -1.00082
+        - -4.10294
+     observations:
+     -
+          camera: basler8
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 1920
+          roi_y_min: 0
+          roi_y_max: 1080
+          cost_type: PosedTargetCameraReprjErrorPK
