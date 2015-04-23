@@ -2,9 +2,20 @@
 
 static_cameras:
  -
+    # The 'camera_name' parameter is used by the caljob file to
+    # identify a camera.
     camera_name: basler1
+    # 'camera_optical_frame' should have the same name as the camera
+    # optical frame in your URDF
     camera_optical_frame: basler1
+    # The trigger type tells the calibration how it should move to
+    # the next scene. 'NO_WAIT_TRIGGER' automatically continues
+    # after a scene is processed while 'ROS_PARAM_TRIGGER' waits for a 
+    # boolean parameter to be set on the ROS server. See the ROS-I 
+    # Calibration package for more info. I suggest using NO_WAIT_TRIGGER
+    # here.
     trigger: NO_WAIT_TRIGGER
+    # The ROS topic of the RGB image of the camera 
     image_topic: /Basler1/image_rect
     angle_axis_ax: 0.0
     angle_axis_ay: 0.0
@@ -12,6 +23,9 @@ static_cameras:
     position_x: 0.0
     position_y: 0.0
     position_z: 0.0
+    # simple camera transformation interface
+    # There are many possible options for this field and it will
+    # dictate what frames must be specified.
     transform_interface: ros_camera_scti
     parent_frame: world_frame
     focal_length_x: 2890.9
