@@ -1,10 +1,17 @@
+# This file defines the targets that will be used in this calibration job.
+
 ---
 
 moving_targets:
 -
+     # The name by which you will refer to this target when creating a 
+     # calibration job file. 
      target_name: modified_circle_10x10
+     # Pattern_options_ { Chessboard = 0, CircleGrid = 1, ARtag = 2 }
      target_type: 2
+     # Units are in meters
      circle_dia:  0.0125
+     # The name of the target's frame in the URDF.
      target_frame: cal_grid
      transform_interface: ros_lti
      angle_axis_ax: 0.0
@@ -13,9 +20,13 @@ moving_targets:
      position_x: 0.0
      position_y: 0.0
      position_z: 0.0
+     # Remember that for chess targets, a 'point' is the 
+     # intersection of four squares
      target_rows: 10
      target_cols: 10
      num_points: 100
+     # z points out of the target; x and y are such that all points on 
+     # the target are in the (positive, positive) quadrant.
      points:
       - pnt: [  0.0000,  0.1800, 0.0000]
       - pnt: [  0.0200,  0.1800, 0.0000]
