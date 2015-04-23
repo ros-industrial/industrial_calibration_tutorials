@@ -1,0 +1,47 @@
+<launch>
+  <!-- robot_ip: IP-address of the robot's socket-messaging server -->
+  <arg name="sim" default="false" />
+  <arg name="limited" default="false"/>
+  <arg name="debug" default="false" />
+  <arg name="robot_ip" default="192.168.1.13"/>
+  <arg name="reverse_port" default="50001"/>
+  <arg name="min_payload"  default="0.0"/>
+  <arg name="max_payload"  default="10.0"/>
+
+  <!-- Remap follow_joint_trajectory -->
+  <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
+  
+  <!-- ur common  ur_driver, buffe_server-->
+  <param name="prevent_programming" value="true"/>
+  <!-- NOTE: this is a slight customization of the ur_common.launch from the universal robot package -->
+  <!-- NOTE: It remaps the /joint_states topic to /ur5/joint_states -->
+  <include file="$(find moveit_config)/launch/ur_common.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)"/>
+    <arg name="reverse_port" value="$(arg reverse_port)"/>
+    <arg name="min_payload"  value="$(arg min_payload)"/>
+    <arg name="max_payload"  value="$(arg max_payload)"/>
+  </include>
+
+
+  <!-- Launch moveit -->
+  <include file="$(find moveit_config)/launch/move_group.launch">
+    <!--arg name="limited" default="$(arg limited)"/-->
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+
+
+  <!-- joint state publisher which combines the mutable and the real joint states for the scene -->
+  <node name="combined_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+        <rosparam param="source_list">[ur5/joint_states, mutable_joint_states]</rosparam>
+        <param name="publish_default_velocities" value="true" />
+        <param name="publish_default_efforts" value="true" />
+        <param name="publish_default_positions" value="true" />
+  </node>
+
+  <!-- publish the joint states associated with transforms that might be calibrated-->
+  <node name="mutable_joint_state_publisher" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen">
+             <param name="mutable_joint_state_yaml_file" value="$(find cameras_to_robot)/yaml/mutable_joint_states.yaml" />
+             <remap from="joint_states" to="/mutable_joint_states"/>
+    </node>
+
+</launch>
