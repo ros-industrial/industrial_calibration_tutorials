@@ -17,6 +17,8 @@
        The xacro file is in the industrial_extrinsic_cal package (/urdf) 
        The include line will look similar to the ur5 xacro include above        -->
 
+  <!-- The root frame of the URDF, meaning it has no children. Each URDF can
+       have one, and only one, such frame -->
   <link name="world" />
 
   <joint name="world_joint" type="fixed">
@@ -45,8 +47,13 @@
       </collision>
     </link>
 
+  <!-- Create the calibration target frame. The name of this frame must 
+       match the 'targets' YAML file created as part of the industrial
+       calibration configuration later  -->
    <link name ="cal_grid"/>
 
+  <!-- Note that (with joint information) the target is at a known 
+       location in the world and that all joints are fixed -->
   <joint name="ee2target1" type="fixed">
     <parent link="ee_link" />
     <child link = "cal_target_link1" />
@@ -73,6 +80,13 @@
 
  
   <!-- baslers -->
+  <!-- This section uses the macro from 'basler_cal_macro.xacro' to instantiate
+       an unknown 6 DOF transformation from world to the target frame of each 
+       camera. These transformations will be published by a 'mutable joint state
+       publisher'. Note that the name of the camera must match up with the
+       corresponding 'optical frame' argument of the 'camera' YAML file of
+       industrial calibration. -->
+       
   <!-- Inspect the camera xacro included above
        The camera xacro file includes a macro http://wiki.ros.org/xacro#Macros
        Use the proper syntax to call the camera macro
