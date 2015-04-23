@@ -1,3 +1,9 @@
+# YAML file that associates an action server (both name and type) with a particular
+# set of joints. This is how MoveIt knows how to control your particular robot's 
+# motion. Confusingly, the 'name' parameter actions like a topic namespace and the
+# 'action_ns' parameter is much like the last portion of the topic name.
+# 
+# So MoveIt! looks for an action server with the name <name>/<action_ns>
 controller_list:
   - name: ""
     action_ns: follow_joint_trajectory
