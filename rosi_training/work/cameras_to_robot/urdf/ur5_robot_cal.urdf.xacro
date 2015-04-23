@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="ur5" >
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find ur_description)/urdf/gazebo.urdf.xacro" />
+
+  <!-- ur5 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:ur5_robot prefix="" joint_limited="false"/>
+
+  <!-- camera -->
+  <!-- Use the xacro include syntax to include the correct file for the camera
+       http://wiki.ros.org/xacro#Including_other_xacro_files
+       The xacro file is in the industrial_extrinsic_cal package (/urdf) 
+       The include line will look similar to the ur5 xacro include above        -->
+
+  <link name="world" />
+
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.7854" />
+  </joint>
+  <link name="cal_target_link1"/>
+
+  <link name="cal_target_link2"/>
+
+  <link name="cal_target_link3" >
+      <visual>
+        <geometry>
+           <box size="0.3 0.27 0.002"/>
+
+        </geometry>
+        <material name="White">
+          <color rgba="1.0 1.0 1.0 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+           <box size="0.3 0.27 0.02"/>
+        </geometry>
+      </collision>
+    </link>
+
+   <link name ="cal_grid"/>
+
+  <joint name="ee2target1" type="fixed">
+    <parent link="ee_link" />
+    <child link = "cal_target_link1" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 1.5708 0.0" />
+  </joint>
+
+  <joint name="target1to2" type="fixed">
+    <parent link="cal_target_link1" />
+    <child link = "cal_target_link2" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -2.3562" />
+  </joint>
+
+  <joint name="target2to3" type="fixed">
+    <parent link="cal_target_link2" />
+    <child link = "cal_target_link3" />
+    <origin xyz="-0.115 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+  <joint name="targetToGrid" type="fixed">
+    <parent link="cal_target_link2" />
+    <child link = "cal_grid" />
+    <origin xyz="-0.0696 0.06985 0.0" rpy="3.1415 0.0 -1.5708" />
+  </joint>
+
+ 
+  <!-- baslers -->
+  <!-- Inspect the camera xacro included above
+       The camera xacro file includes a macro http://wiki.ros.org/xacro#Macros
+       Use the proper syntax to call the camera macro
+       Hint: prefix=cameranumber(basler#) parent_link=world        -->
+
+
+</robot>
