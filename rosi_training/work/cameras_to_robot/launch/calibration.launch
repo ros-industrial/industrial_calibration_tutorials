@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find cameras_to_robot)/config/rosconsole.config" />
+
+
+     <!--include file="$(find cameras_to_robot)/launch/cameras.launch" >
+          <arg name="view_cameras" value="true"/>
+     </include-->
+
+    <!-- Launch service which when called will move robot and then indicate scene is ready   -->
+    <node pkg="industrial_extrinsic_cal" type="ros_robot_trigger_action_service" name="rosRobotSceneTrigger" output="screen" />
+
+    <!-- Launch the extrinsic calibration service -->
+    <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
+       <param name="yaml_file_path" value="$(find cameras_to_robot)/yaml/"/>
+       <param name="camera_file" value="cameras.yaml"/>
+       <param name="target_file" value="targets.yaml"/>
+       <param name="cal_job_file" value="B9_caljob.yaml"/>
+       <param name="post_proc_on" value="true"/>
+       <param name="observation_data_file" value="$(find cameras_to_robot)/data/observation_data.yaml"/>
+    </node>
+
+</launch>
