@@ -2,18 +2,34 @@
 
 static_cameras:
  -
-    camera_name: basler1
-    camera_optical_frame: basler1
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler1/image_rect
+    # The 'camera_name' parameter is used by the caljob file to
+    # identify a camera.
+    camera_name: 
+    # 'camera_optical_frame' should have the same name as the camera
+    # optical frame in your URDF
+    camera_optical_frame:
+    # The trigger type tells the calibration how it should move to
+    # the next scene. 'NO_WAIT_TRIGGER' automatically continues
+    # after a scene is processed while 'ROS_PARAM_TRIGGER' waits for a 
+    # boolean parameter to be set on the ROS server. See the ROS-I 
+    # Calibration package for more info. I suggest using NO_WAIT_TRIGGER
+    # here. 
+    trigger: 
+    # The ROS topic of the RGB image of the camera 
+    image_topic:
     angle_axis_ax: 0.0
     angle_axis_ay: 0.0
     angle_axis_az: 0.0
     position_x: 0.0
     position_y: 0.0
     position_z: 0.0
+    # simple camera transformation interface
+    # There are many possible options for this field and it will
+    # dictate what frames must be specified.
     transform_interface: ros_camera_scti
-    parent_frame: world_frame
+    # Parent frame of the camera in the URDF
+    parent_frame:
+    # Instrinsic parameters of the camera
     focal_length_x: 2890.9
     focal_length_y: 2881.9
     center_x: 996.08
@@ -23,195 +39,6 @@ static_cameras:
     distortion_k3: 0.00
     distortion_p1: 0.00
     distortion_p2: 0.00
- -
-    camera_name: basler2
-    camera_optical_frame: basler2
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler2/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler3
-    camera_optical_frame: basler3
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler3/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler4
-    camera_optical_frame: basler4
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler4/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler4
-    camera_optical_frame: basler4
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler4/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler5
-    camera_optical_frame: basler5
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler5/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler6
-    camera_optical_frame: basler6
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler6/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler7
-    camera_optical_frame: basler7
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler7/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler8
-    camera_optical_frame: basler8
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler8/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
-    focal_length_x: 2890.9
-    focal_length_y: 2881.9
-    center_x: 996.08
-    center_y: 579.18
-    distortion_k1: 0.00
-    distortion_k2: 0.00
-    distortion_k3: 0.00
-    distortion_p1: 0.00
-    distortion_p2: 0.00
- -
-    camera_name: basler9
-    camera_optical_frame: basler9
-    trigger: NO_WAIT_TRIGGER
-    image_topic: /Basler9/image_rect
-    angle_axis_ax: 0.0
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 0.0
-    transform_interface: ros_camera_scti
-    parent_frame: world_frame
     focal_length_x: 2890.9
     focal_length_y: 2881.9
     center_x: 996.08

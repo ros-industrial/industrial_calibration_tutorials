@@ -1,3 +1,11 @@
+<!-- 
+  This file launches the necessary nodes for controlling the UR5 hardware
+  in a manner that is compatible with ROS-I Calibration.
+
+  In addition to launching the usual hardware drivers, this node also merges seperate joint_state topics through remappings and a joint state publisher.
+
+  This also launches a 'mutable_joint_state_publisher' that publishes necessary joint transformations and exposes an interface for the calibration node to update your transformations.
+ -->
 <launch>
   <!-- robot_ip: IP-address of the robot's socket-messaging server -->
   <arg name="sim" default="false" />
@@ -11,8 +19,10 @@
   <!-- Remap follow_joint_trajectory -->
   <remap if="$(arg sim)" from="/follow_joint_trajectory" to="/arm_controller/follow_joint_trajectory"/>
   
-  <!-- ur common  ur_driver, buffe_server-->
+  <!-- This flag prevents ROS-I from trying to control the robot, letting one
+       manually jog the robot without losing connection. -->
   <param name="prevent_programming" value="true"/>
+
   <!-- NOTE: this is a slight customization of the ur_common.launch from the universal robot package -->
   <!-- NOTE: It remaps the /joint_states topic to /ur5/joint_states -->
   <include file="$(find moveit_config)/launch/ur_common.launch">
@@ -22,26 +32,30 @@
     <arg name="max_payload"  value="$(arg max_payload)"/>
   </include>
 
-
   <!-- Launch moveit -->
   <include file="$(find moveit_config)/launch/move_group.launch">
-    <!--arg name="limited" default="$(arg limited)"/-->
     <arg name="debug" default="$(arg debug)" />
   </include>
 
+  <!-- publish the joint states associated with transforms that might be calibrated-->
+  <node name="mutable_joint_state_publisher" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen">
+     <!-- This node takes as an argument a 'mutable_joint_states_yaml_file'
+          which tells the publisher the believed initial state of the 
+          to-be-calibrated joints -->
+     <param name="mutable_joint_state_yaml_file" value="$(find cameras_to_robot)/yaml/mutable_joint_states.yaml" />
+     <!-- The publisher also publishes on the topic /joint_states so be sure to remap to a namespaced topic -->
+     <remap from="joint_states" to="/mutable_joint_states"/>
+  </node>
 
   <!-- joint state publisher which combines the mutable and the real joint states for the scene -->
   <node name="combined_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-        <rosparam param="source_list">[ur5/joint_states, mutable_joint_states]</rosparam>
-        <param name="publish_default_velocities" value="true" />
-        <param name="publish_default_efforts" value="true" />
-        <param name="publish_default_positions" value="true" />
+     <!-- joint_state_publisher will forward joints it recieves on the
+          topics specified in the 'source_list' parameter -->
+    <rosparam param="source_list">[ur5/joint_states, mutable_joint_states]</rosparam>
+    <param name="publish_default_velocities" value="true" />
+    <param name="publish_default_efforts" value="true" />
+    <param name="publish_default_positions" value="true" />
   </node>
 
-  <!-- publish the joint states associated with transforms that might be calibrated-->
-  <node name="mutable_joint_state_publisher" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen">
-             <param name="mutable_joint_state_yaml_file" value="$(find cameras_to_robot)/yaml/mutable_joint_states.yaml" />
-             <remap from="joint_states" to="/mutable_joint_states"/>
-    </node>
 
 </launch>

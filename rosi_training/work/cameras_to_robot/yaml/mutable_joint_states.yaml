@@ -1,54 +1,14 @@
-basler1_pitch_joint: -0.426144527739395
-basler1_roll_joint: -2.96231365517267
-basler1_x_joint: 0.750099314282024
-basler1_y_joint: 0.654990809475111
-basler1_yaw_joint: -3.04146369106198
-basler1_z_joint: 1.07596713929585
-basler2_pitch_joint: 0
-basler2_roll_joint: -2.8
-basler2_x_joint: 0
-basler2_y_joint: 0.8
-basler2_yaw_joint: 3.14
-basler2_z_joint: 1
-basler3_pitch_joint: 0
-basler3_roll_joint: 4.2
-basler3_x_joint: -0.8
-basler3_y_joint: 0.8
-basler3_yaw_joint: 4.2
-basler3_z_joint: 1
-basler4_pitch_joint: 0
-basler4_roll_joint: -2.5
-basler4_x_joint: 0.8
-basler4_y_joint: 0.2
-basler4_yaw_joint: 1.5
-basler4_z_joint: 1.3
-basler5_pitch_joint: 0
-basler5_roll_joint: -3.14
-basler5_x_joint: 0
-basler5_y_joint: 0.2
-basler5_yaw_joint: 0
-basler5_z_joint: 1.3
-basler6_pitch_joint: -0.7
-basler6_roll_joint: -2.2
-basler6_x_joint: -0.8
-basler6_y_joint: 0.2
-basler6_yaw_joint: 0
-basler6_z_joint: 1.3
-basler7_pitch_joint: 0
-basler7_roll_joint: -2.1
-basler7_x_joint: 0.8
-basler7_y_joint: -1
-basler7_yaw_joint: 0.2
-basler7_z_joint: 1.35
-basler8_pitch_joint: 0
-basler8_roll_joint: 3.7
-basler8_x_joint: 0
-basler8_y_joint: -1
-basler8_yaw_joint: 0
-basler8_z_joint: 1.35
-basler9_pitch_joint: -0.7
-basler9_roll_joint: -2.2
-basler9_x_joint: -0.8
-basler9_y_joint: -1
-basler9_yaw_joint: 0
-basler9_z_joint: 1.35
+# This file defines the initial positions of the 'mutable joints' that
+# were defined using the camera macro in the URDF. They are read on start
+# up and written to when the mutable joint state publisher shuts down. 
+
+# TODO: you will need to fill in all 6 six joints with the joint name
+# as it appears in the URDF and an initial value. You may want to consult
+# the camera macro in the industrial_extrinsic_cal package (/urdf) for the
+# joint names
+<joint_name> : <joint_value>
+<joint_name> : <joint_value>
+<joint_name> : <joint_value>
+<joint_name> : <joint_value>
+<joint_name> : <joint_value>
+<joint_name> : <joint_value>
