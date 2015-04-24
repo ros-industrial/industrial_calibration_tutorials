@@ -1,0 +1,20 @@
+<!-- 
+  This file launches a 'mutable_joint_state_publisher' that publishes necessary joint transformations and exposes an interface for the calibration node to update your transformations.
+
+  Be sure to update the file pointed to by the 'mutable_joint_state_yaml_file' parameter with all of the transformation joints in your URDF.
+
+  Typically this file would go with your bringup files for the hardware, but it is included here for the purposes of training.
+ -->
+
+<launch>
+<!-- publish the joint states associated with transforms that might be calibrated-->
+  <node name="mutable_joint_state_publisher" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen">
+     <!-- This node takes as an argument a 'mutable_joint_states_yaml_file'
+          which tells the publisher the believed initial state of the 
+          to-be-calibrated joints -->
+     <param name="mutable_joint_state_yaml_file" value="$(find cameras_to_robot)/yaml/mutable_joint_states.yaml" />
+     <!-- The publisher also publishes on the topic /joint_states so be sure to remap to a namespaced topic -->
+     <remap from="joint_states" to="/mutable_joint_states"/>
+  </node>
+
+</launch>
