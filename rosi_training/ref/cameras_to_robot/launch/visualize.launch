@@ -21,4 +21,6 @@
     <rosparam param="source_list">[mutable_joint_states,]</rosparam>
   </node>
 
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf_tutorial)/urdf.rviz" />
+
 </launch>
