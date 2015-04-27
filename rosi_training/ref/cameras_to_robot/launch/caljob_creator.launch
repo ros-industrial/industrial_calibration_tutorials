@@ -10,5 +10,7 @@
     <!-- Note that the leading forward slash is important here as it indicates to ROS
          to look for that topic name at global scope, not your namespaced one -->
     <arg name="joints_topic" value="/ur5/joint_states"/>
+    
+    <arg name="output_file" value="$(find cameras_to_robot)/yaml/my_caljob.yaml"/>
   </include>
 </launch>
