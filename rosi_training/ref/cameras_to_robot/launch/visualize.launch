@@ -1,0 +1,24 @@
+<launch>
+  <!-- Load the robot model the global parameter server -->
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find cameras_to_robot)/urdf/ur5_robot_cal.urdf.xacro'" />
+  
+  <!-- Start a state publisher so TF can be visualized in Rviz -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  
+  <!-- publish the joint states associated with transforms that might be calibrated-->
+  <node name="mutable_joint_state_publisher" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" output="screen" >
+    <!-- This node takes as an argument a 'mutable_joint_states_yaml_file'
+        which tells the publisher the believed initial state of the 
+        to-be-calibrated joints -->
+    <param name="mutable_joint_state_yaml_file" value="$(find cameras_to_robot)/yaml/mutable_joint_states.yaml" />
+    <remap from="joint_states" to="mutable_joint_states"/>
+  </node>
+  
+  <!-- Remember that a joint_state_publisher might be necessary to combine the outputs of two nodes that publish
+       on the 'joint_states' topic. This node also helps with demonstration because it will publish dummy zero
+       values for any joint that it does not see being handled by one of the topics in the 'source_list' param -->
+  <node name="combined_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <rosparam param="source_list">[mutable_joint_states,]</rosparam>
+  </node>
+
+</launch>

@@ -1,0 +1,20 @@
+<launch>
+
+  <!-- Launches the caljob creator launch file in industrial_extrinsic_cal, but namespaces it
+       so that multiple students can run this node at once with a shared master.
+
+       Be sure to change the ns="foo" tag to something unique for you, and set the 'joint_topics'
+       arg to the name of the topic containing your robot's joint values.
+  -->
+
+  <!-- TODO: Fill in the ns tag with a unique name -->
+  <include file="$(find caljob_creator)/launch/caljob_create.launch" ns="">
+    <!-- Note that the leading forward slash is important here as it indicates to ROS
+         to look for that topic name at global scope, not your namespaced one -->
+
+    <!-- TODO: Set the 'joints_topic' argument for this launch file to the robot
+        joint_state topic -->
+    <arg name="joints_topic" value=""/>
+  </include>
+
+</launch>

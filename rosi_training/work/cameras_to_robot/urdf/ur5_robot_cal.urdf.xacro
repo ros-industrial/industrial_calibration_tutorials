@@ -87,10 +87,14 @@
        corresponding 'optical frame' argument of the 'camera' YAML file of
        industrial calibration. -->
        
-  <!-- Inspect the camera xacro included above
+  <!-- TODO: Inspect the camera xacro included above
        The camera xacro file includes a macro http://wiki.ros.org/xacro#Macros
        Use the proper syntax to call the camera macro
-       Hint: prefix=cameranumber(basler#) parent_link=world        -->
+
+       Note that for training, you will need to set the 'prefix' parameter to
+       "basler#' where # is the number of the camera you're working with.
+        
+       Hint: prefix=basler# parent_link=world        -->
 
 
 </robot>
