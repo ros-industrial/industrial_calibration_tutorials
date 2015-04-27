@@ -14,7 +14,11 @@
   <!-- camera -->
   <!-- Use the xacro include syntax to include the correct file for the camera
        http://wiki.ros.org/xacro#Including_other_xacro_files
-       The xacro file is in the industrial_extrinsic_cal package (/urdf) 
+       The xacro file is in the industrial_extrinsic_cal package (/urdf)
+
+       Currently it is specific to Dr. Chris Lewis master branch of industrial_calibration
+       https://github.com/drchrislewis/industrial_calibration/tree/master/industrial_extrinsic_cal
+
        The include line will look similar to the ur5 xacro include above        -->
 
   <!-- The root frame of the URDF, meaning it has no children. Each URDF can

@@ -12,6 +12,8 @@
   <xacro:ur5_robot prefix="" joint_limited="false"/>
 
   <!-- camera -->
+  <!-- Currently it is specific to Dr. Chris Lewis master branch of industrial_calibration
+       https://github.com/drchrislewis/industrial_calibration/tree/master/industrial_extrinsic_cal -->
   <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/basler_cal_macro.xacro"/>
 
   <!-- The root frame of the URDF, meaning it has no children. Each URDF can
