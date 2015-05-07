@@ -18,7 +18,8 @@
    <!--arg name="basler_sn" default="21511088"/-->
    <!--arg name="basler_sn" default="21511095"/-->
    <!--arg name="basler_sn" default="21496537"/-->
-   <arg name="basler_sn" default="21511086"/>
+   <!--arg name="basler_sn" default="21511086"/-->
+    <arg name ="basler_sn" default="21135423"/>
 
    <!-- Launch the asus camera node -->
    <include if="$(arg asus)" file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
