@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <env name="ROSCONSOLE_CONFIG_FILE" value="$(find ind_cal_multi_camera)/config/rosconsole.config" />
+
+   <arg name="asus" default="false" />
+   <arg name="asus_device_id" default="2@1"/>
+   <arg name="asus_camera_name" default="asus1"/>
+   <arg name="asus_calprefix" default="1"/>
+
+   <arg name="basler" default="true" />
+   <!--arg name="basler_sn" default="21511093"/-->
+   <!--arg name="basler_sn" default="21511083"/-->
+   <!--arg name="basler_sn" default="21135424"/-->
+   <!--arg name="basler_sn" default="21516700"/-->
+   <!--arg name="basler_sn" default="21511094"/-->
+   <!--arg name="basler_sn" default="21499591"/-->
+   <!--arg name="basler_sn" default="21511088"/-->
+   <!--arg name="basler_sn" default="21511095"/-->
+   <!--arg name="basler_sn" default="21496537"/-->
+   <arg name="basler_sn" default="21511086"/>
+
+   <!-- Launch the asus camera node -->
+   <include if="$(arg asus)" file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
+     <arg name="topic_ns" value="$(arg asus_camera_name)" />
+     <arg name="tf_prefix" value="$(arg asus_camera_name)"/>
+     <arg name="cal_prefix" value="$(arg asus_calprefix)" />
+     <arg name="device_id" value="$(arg asus_device_id)" />
+     <arg name="publish_tf" value="false" />
+   </include> 
+
+   <!-- Basler camera node   -->
+   <node if="$(arg basler)" pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
+     <param name="camera_id" value="Basler-$(arg basler_sn)"/>
+     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="exposure_mode" value="auto_once"/>
+     <param name="exposure_time" value="35000"/>
+     <param name="auto_white_balance_once" value="true"/>
+     <param name="gain_mode" value="auto_once"/>
+     <param name="gain" value="0"/>
+     <param name="digital_shift" value="0"/>
+     <param name="mtu" value="1500"/>
+     <param name="bin_x" value="1"/>
+     <param name="bin_y" value="1"/>
+     <param name="roi_x" value="0"/>
+     <param name="roi_y" value="0"/>
+     <param name="roi_width" value="1624"/>
+     <param name="roi_height" value="1234"/>
+     <param name="frame_rate" value="10"/>
+     <remap from="image" to="basler1/rgb/image_raw"/>
+   </node>
+
+   <node if="$(arg basler)" pkg="nodelet" type="nodelet" name="image_proc_nodelet"  args="manager"/>
+      <node pkg="nodelet" type="nodelet" name="debayer" args="load image_proc/debayer image_proc_nodelet">
+      <remap from="image_raw" to="basler1/rgb/image_raw"/>
+      <remap from="image_color" to="basler1/rgb/image"/>
+   </node>
+
+
+   <!-- Launch the extrinsic calibration service -->
+   <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
+     <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <param name="use_circle_detector" value="false"/>
+     <param name="white_blobs" value="false"/>
+     <rosparam if="$(arg basler)">
+       camera_file: "basler_camera.yaml"
+       target_file: "m10x10.yaml"
+       cal_job_file: "basler_caljob.yaml"
+     </rosparam>
+     <rosparam if="$(arg asus)">
+       camera_file: "asus_camera.yaml"
+       target_file: "m10x10.yaml"
+       cal_job_file: "asus_caljob.yaml"
+     </rosparam>
+   </node> 
+
+   <!-- Start gui with calibration button -->
+   <node name="cal_gui" pkg="calibrate_gui" type="calibrate_gui" />
+
+   <!-- Start scene trigger node -->
+   <node name="scene_trigger" pkg="industrial_extrinsic_cal" type="camera_observer_scene_trigger" output="screen" >
+	<param name="target_type" value="2" />
+	<param name="pattern_rows" value="10" />
+	<param name="pattern_cols" value="10" />
+	<param name="red_min" value="130"/>
+	<param name="red_max" value="255"/>
+	<param name="use_circle_detector" value="false"/>
+	<param name="white_blobs" value="false"/>
+   </node>
+
+   <node name="results_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_results_image"/>
+   </node>
+
+   <node name="raw_view" pkg="image_view" type="image_view" >
+              <remap from="image" to="/observer_raw_image"/>
+   </node>
+
+   <node name="unnecessary_view" pkg="image_view" type="image_view" >
+              <remap if="$(arg basler)" from="image" to="/basler1/rgb/image"/>
+              <remap if="$(arg asus)" from="image" to="/asus1/rgb/image_rect_color"/>
+   </node>
+
+</launch>
