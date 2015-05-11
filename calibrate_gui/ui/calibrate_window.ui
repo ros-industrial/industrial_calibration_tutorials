@@ -27,6 +27,19 @@
      <string>Calibrate</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="AcceptButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>100</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Accept Scene</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
