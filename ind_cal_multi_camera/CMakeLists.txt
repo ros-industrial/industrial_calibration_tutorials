@@ -107,7 +107,6 @@ include_directories(
 
 ## Declare a cpp executable
  add_executable(calibration_image_pub src/cal_image_publisher.cpp)
- add_executable(create_ical_scenes src/create_ical_scenes.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
