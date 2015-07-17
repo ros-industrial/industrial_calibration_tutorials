@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<launch>
+   <!-- This launch file is a generic file to launch a basler camera  OUPUT_TOPIC = image  -->
+   <!-- There are two packages that contain nodes that work with baslers-->
+   <!-- Both have issues, sometimes I can't get one or the other to work on any given computer/camera combination -->
+   <!-- I therefore have interfaces to both interfaces -->
+   <!-- to select the one you want set -->
+   <!-- camera_aravis_package true  for the camera_aravis package from https://github.com/ssafarik/camera_aravis -->
+   <!-- note, I modify the camnode to support cameraInfoManager->loadCameraInfo(url) I have yet to submit a pull request -->
+   <!-- camera_aravis_package is false for the aravis_camera_driver package -->
+   <!-- Many parameters for these two drivers are different even though they both use the aravis library -->
+   <!-- They each use a different version of the aravis library. -->
+   <!-- camera_aravis uses version 0.4, -->
+   <!-- aravis_camera_driver uses version 0.2 -->
+   <!-- There exists more than one version labled 0.2 -->
+   <!-- I often have to uncomment g_type_init();  to get the nodes to compile -->
+
+   <!-- arguments for this file -->
+   <arg name="camera_aravis_package" default="true"/>
+   <arg name="basler_sn" default="21499591"/>
+   <arg name="camera_name" default="Basler1"/>
+   <arg name="camera_id" default="Basler-$(arg basler_sn)"/>
+   <arg name="guid" default="Basler-$(arg basler_sn)" />
+   <arg name="exposure_auto" default="Once"/>
+   <arg name="exposure_mode" default="auto_once"/>
+   <arg name="exposure_time" default="2000.0" />
+   <arg name="auto_white_balance" default="true"/>
+   <arg name="gain_auto" default="Once" />
+   <arg name="gain" default="0" />
+   <arg name="gain_mode" default="auto_once"/>
+   <arg name="frame_rate" default="20.0" />
+   <arg name="frame_id" default="$(arg camera_name)_optical_frame"/>
+   <arg name="trigger_mode" default="Off" />
+   <arg name="trigger_source" default="Line1" />
+   <arg name="pixel_format" default="Mono8"/>
+   <arg name="digital_shift" default="0"/>
+   <arg name="mtu" default="1500"/>
+   <arg name="bin_x" default="1"/>
+   <arg name="bin_y" default="1"/>
+   <arg name="roi_x" default="0"/>
+   <arg name="roi_y" default="0"/>
+   <arg name="roi_width" default="1924"/>
+   <arg name="roi_height" default="1234"/>
+   
+  <!-- Basler camera node from camera_aravis package-->
+  <node if="$(arg camera_aravis_package)" pkg="camera_aravis" type="camnode" name="$(arg camera_name)" output="screen">
+    <param name="guid" value="$(arg guid)"/>
+    <param name="ExposureAuto" value="$(arg exposure_auto)"/>
+    <param name="GainAuto" value="$(arg gain_auto)"/>
+    <param name="ExposureTimeAbs" value="$(arg exposure_time)"/>
+    <param name="Gain" value="$(arg gain)"/>
+    <param name="AcquisitionFrameRate" value="$(arg frame_rate)"/>
+    <param name="frame_id" value="$(arg frame_id)"/>
+    <param name="TriggerMode" value="$(arg trigger_mode)"/>
+    <param name="TriggerSource" value="$(arg trigger_source)"/>
+    <param name="PixelFormat" value="$(arg pixel_format)"/>
+  </node>
+
+   <!-- Basler camera node from aravis_camera_driver package -->
+   <node unless="$(arg camera_aravis_package)"  pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
+     <param name="camera_id" value="Basler-$(arg basler_sn)"/>
+     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="exposure_mode" value="$(arg exposure_mode)"/>
+     <param name="exposure_time" value="$(arg exposure_time)"/>
+     <param name="auto_white_balance_once" value="$(arg auto_white_balance)"/>
+     <param name="gain_mode" value="$(arg gain_mode)"/>
+     <param name="gain" value="$(arg gain)"/>
+     <param name="digital_shift" value="$(arg digital_shift)"/>
+     <param name="mtu" value="$(arg mtu)"/>
+     <param name="bin_x" value="$(arg bin_x)"/>
+     <param name="bin_y" value="$(arg bin_y)"/>
+     <param name="roi_x" value="$(arg roi_x)"/>
+     <param name="roi_y" value="$(arg roi_y)"/>
+     <param name="roi_width" value="$(arg roi_width)"/>
+     <param name="roi_height" value="$(arg roi_height)"/>
+     <param name="frame_rate" value="$(arg frame_rate)"/>
+   </node>
+
+</launch>

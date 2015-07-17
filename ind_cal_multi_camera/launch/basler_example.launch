@@ -1,0 +1,22 @@
+<launch>
+  <arg name="view" default="true"/>
+
+  <include  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
+      <arg name="camera_aravis_package" value="false"/>
+      <arg name="basler_sn" value="21135423"/>
+      <arg name="roi_width" value="1624"/>
+      <arg name="roi_height" value="1234"/>
+      <arg name="digital_shift" default="0"/>
+      <arg name="mtu" value="1500"/>
+      <arg name="bin_x" value="1"/>
+      <arg name="bin_y" value="1"/>
+      <arg name="roi_x" value="0"/>
+      <arg name="roi_y" value="0"/>
+      <remap from="image" to="B1/image_raw"/>
+  </include>
+	
+  <node name="B1_view" pkg="image_view" type="image_view" >
+      <remap from="B1/image_raw" to="image"/>
+  </node>
+
+</launch>
