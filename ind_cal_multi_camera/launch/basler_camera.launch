@@ -53,7 +53,7 @@
     <param name="frame_id" value="$(arg frame_id)"/>
     <param name="TriggerMode" value="$(arg trigger_mode)"/>
     <param name="TriggerSource" value="$(arg trigger_source)"/>
-    <param name="PixelFormat" value="$(arg pixel_format)"/>
+    <param name="PixelFormat" value="$(arg pixel_format)"/> 
   </node>
 
    <!-- Basler camera node from aravis_camera_driver package -->
@@ -74,6 +74,7 @@
      <param name="roi_width" value="$(arg roi_width)"/>
      <param name="roi_height" value="$(arg roi_height)"/>
      <param name="frame_rate" value="$(arg frame_rate)"/>
+     <remap from="image" to="$(arg camera_name)/image_raw"/>
    </node>
 
 </launch>
