@@ -1,7 +1,22 @@
 <launch>
   <arg name="view" default="true"/>
+  <arg name="use_camnode" default="true"/>
 
-  <include  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
+
+  <include if="$(arg use_camnode)"  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
+      <arg name="camera_aravis_package" value="true"/>
+      <arg name="basler_sn" value="21135423"/>
+      <arg name="exposure_auto" value="auto_once"/>
+      <arg name="exposure_time" value="2000"/>
+      <arg name="gain_auto" value="Once" />
+      <arg name="gain" value="0" />
+      <arg name="frame_rate" value="20"/>
+      <arg name="trigger_mode" value="Off"/>
+      <arg name="trigger_source" value="Line1"/>
+      <arg name="pixel_format" value="Mono8"/>
+  </include>
+
+  <include unless="$(arg use_camnode)"  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
       <arg name="camera_aravis_package" value="false"/>
       <arg name="basler_sn" value="21135423"/>
       <arg name="roi_width" value="1624"/>
@@ -12,11 +27,10 @@
       <arg name="bin_y" value="1"/>
       <arg name="roi_x" value="0"/>
       <arg name="roi_y" value="0"/>
-      <remap from="image" to="B1/image_raw"/>
   </include>
 	
   <node name="B1_view" pkg="image_view" type="image_view" >
-      <remap from="B1/image_raw" to="image"/>
+      <remap to="/Basler1/image_raw" from="image"/>
   </node>
 
 </launch>
