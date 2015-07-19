@@ -2,7 +2,6 @@
 reference_frame: T1_frame
 scenes: 
 -
-     scene_id: 0
      trigger: NO_WAIT_TRIGGER
      observations: 
      -
