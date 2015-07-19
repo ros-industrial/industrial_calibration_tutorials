@@ -506,197 +506,197 @@ Visualization Manager:
       Frames:
         All Enabled: false
         T1_camera1_frame:
-          Value: false
+          Value: true
         T1_camera1_ir_link:
-          Value: false
+          Value: true
         T1_camera1_ir_optical_frame:
-          Value: false
+          Value: true
         T1_camera1_link:
-          Value: false
+          Value: true
         T1_camera1_link_pitch:
-          Value: false
+          Value: true
         T1_camera1_link_x_trans:
-          Value: false
+          Value: true
         T1_camera1_link_y_trans:
-          Value: false
+          Value: true
         T1_camera1_link_yaw:
-          Value: false
+          Value: true
         T1_camera1_link_z_trans:
-          Value: false
+          Value: true
         T1_camera1_rgb_frame:
-          Value: false
+          Value: true
         T1_camera1_rgb_link:
-          Value: false
+          Value: true
         T1_camera1_rgb_optical_frame:
           Value: true
         T1_camera2_frame:
-          Value: false
+          Value: true
         T1_camera2_ir_link:
-          Value: false
+          Value: true
         T1_camera2_ir_optical_frame:
-          Value: false
+          Value: true
         T1_camera2_link:
-          Value: false
+          Value: true
         T1_camera2_link_pitch:
-          Value: false
+          Value: true
         T1_camera2_link_x_trans:
-          Value: false
+          Value: true
         T1_camera2_link_y_trans:
-          Value: false
+          Value: true
         T1_camera2_link_yaw:
-          Value: false
+          Value: true
         T1_camera2_link_z_trans:
-          Value: false
+          Value: true
         T1_camera2_rgb_frame:
-          Value: false
+          Value: true
         T1_camera2_rgb_link:
-          Value: false
+          Value: true
         T1_camera2_rgb_optical_frame:
           Value: true
         T1_camera3_frame:
-          Value: false
+          Value: true
         T1_camera3_ir_link:
-          Value: false
+          Value: true
         T1_camera3_ir_optical_frame:
-          Value: false
+          Value: true
         T1_camera3_link:
-          Value: false
+          Value: true
         T1_camera3_link_pitch:
-          Value: false
+          Value: true
         T1_camera3_link_x_trans:
-          Value: false
+          Value: true
         T1_camera3_link_y_trans:
-          Value: false
+          Value: true
         T1_camera3_link_yaw:
-          Value: false
+          Value: true
         T1_camera3_link_z_trans:
-          Value: false
+          Value: true
         T1_camera3_rgb_frame:
-          Value: false
+          Value: true
         T1_camera3_rgb_link:
-          Value: false
+          Value: true
         T1_camera3_rgb_optical_frame:
           Value: true
         T1_camera4_frame:
-          Value: false
+          Value: true
         T1_camera4_ir_link:
-          Value: false
+          Value: true
         T1_camera4_ir_optical_frame:
-          Value: false
+          Value: true
         T1_camera4_link:
-          Value: false
+          Value: true
         T1_camera4_link_pitch:
-          Value: false
+          Value: true
         T1_camera4_link_x_trans:
-          Value: false
+          Value: true
         T1_camera4_link_y_trans:
-          Value: false
+          Value: true
         T1_camera4_link_yaw:
-          Value: false
+          Value: true
         T1_camera4_link_z_trans:
-          Value: false
+          Value: true
         T1_camera4_rgb_frame:
-          Value: false
+          Value: true
         T1_camera4_rgb_link:
-          Value: false
+          Value: true
         T1_camera4_rgb_optical_frame:
           Value: true
         T1_frame:
-          Value: false
+          Value: true
         T2_camera1_frame:
-          Value: false
+          Value: true
         T2_camera1_ir_link:
-          Value: false
+          Value: true
         T2_camera1_ir_optical_frame:
-          Value: false
+          Value: true
         T2_camera1_link:
-          Value: false
+          Value: true
         T2_camera1_link_pitch:
-          Value: false
+          Value: true
         T2_camera1_link_x_trans:
-          Value: false
+          Value: true
         T2_camera1_link_y_trans:
-          Value: false
+          Value: true
         T2_camera1_link_yaw:
-          Value: false
+          Value: true
         T2_camera1_link_z_trans:
-          Value: false
+          Value: true
         T2_camera1_rgb_frame:
-          Value: false
+          Value: true
         T2_camera1_rgb_link:
-          Value: false
+          Value: true
         T2_camera1_rgb_optical_frame:
           Value: true
         T2_camera2_frame:
-          Value: false
+          Value: true
         T2_camera2_ir_link:
-          Value: false
+          Value: true
         T2_camera2_ir_optical_frame:
-          Value: false
+          Value: true
         T2_camera2_link:
-          Value: false
+          Value: true
         T2_camera2_link_pitch:
-          Value: false
+          Value: true
         T2_camera2_link_x_trans:
-          Value: false
+          Value: true
         T2_camera2_link_y_trans:
-          Value: false
+          Value: true
         T2_camera2_link_yaw:
-          Value: false
+          Value: true
         T2_camera2_link_z_trans:
-          Value: false
+          Value: true
         T2_camera2_rgb_frame:
-          Value: false
+          Value: true
         T2_camera2_rgb_link:
-          Value: false
+          Value: true
         T2_camera2_rgb_optical_frame:
           Value: true
         T2_camera3_frame:
-          Value: false
+          Value: true
         T2_camera3_ir_link:
-          Value: false
+          Value: true
         T2_camera3_ir_optical_frame:
-          Value: false
+          Value: true
         T2_camera3_link:
-          Value: false
+          Value: true
         T2_camera3_link_pitch:
-          Value: false
+          Value: true
         T2_camera3_link_x_trans:
-          Value: false
+          Value: true
         T2_camera3_link_y_trans:
-          Value: false
+          Value: true
         T2_camera3_link_yaw:
-          Value: false
+          Value: true
         T2_camera3_link_z_trans:
-          Value: false
+          Value: true
         T2_camera3_rgb_frame:
-          Value: false
+          Value: true
         T2_camera3_rgb_link:
-          Value: false
+          Value: true
         T2_camera3_rgb_optical_frame:
           Value: true
         T2_camera4_frame:
-          Value: false
+          Value: true
         T2_camera4_ir_link:
-          Value: false
+          Value: true
         T2_camera4_ir_optical_frame:
-          Value: false
+          Value: true
         T2_camera4_link:
-          Value: false
+          Value: true
         T2_camera4_link_pitch:
-          Value: false
+          Value: true
         T2_camera4_link_x_trans:
-          Value: false
+          Value: true
         T2_camera4_link_y_trans:
-          Value: false
+          Value: true
         T2_camera4_link_yaw:
-          Value: false
+          Value: true
         T2_camera4_link_z_trans:
-          Value: false
+          Value: true
         T2_camera4_rgb_frame:
-          Value: false
+          Value: true
         T2_camera4_rgb_link:
-          Value: false
+          Value: true
         T2_camera4_rgb_optical_frame:
           Value: true
         T2_frame:
@@ -887,5 +887,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1610
-  X: 58
-  Y: 60
+  X: 1717
+  Y: 72
