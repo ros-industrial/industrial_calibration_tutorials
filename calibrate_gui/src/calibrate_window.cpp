@@ -23,7 +23,7 @@ namespace calibrate_gui {
 
   void CalMainWindow::on_CalibrateButton_clicked()
   {
-    ROS_ERROR("calibrate button clicked, calling run_calibration service");
+    ROS_INFO("calibrate button clicked, calling run_calibration service");
     /* USE the action rather than the service to enable other interactions while collecting data
       ros::ServiceClient client = nh_.serviceClient<std_srvs::Empty>("calibration_service");
       std_srvs::Empty srv;
