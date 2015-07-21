@@ -6,13 +6,8 @@ static_cameras:
     camera_optical_frame: /Basler1_optical_frame
     trigger: NO_WAIT_TRIGGER
     image_topic: /basler1/rgb/image
-    angle_axis_ax: 3.14
-    angle_axis_ay: 0.0
-    angle_axis_az: 0.0
-    position_x: 0.0
-    position_y: 0.0
-    position_z: 1.0
     transform_interface: default_ti
+    xyz_aaxis_pose[ 0.0, 0.0, 1.0, 3.14, 0.0, 0.0 ]
     focal_length_x: 3528.3
     focal_length_y: 3518.3
     center_x: 868.9
