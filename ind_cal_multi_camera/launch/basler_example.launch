@@ -1,6 +1,6 @@
 <launch>
   <arg name="view" default="true"/>
-  <arg name="use_camnode" default="false"/>
+  <arg name="use_camnode" default="true"/>
 
 
   <include if="$(arg use_camnode)"  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
@@ -17,18 +17,35 @@
       <arg name="pixel_format" value="Mono8"/>
   </include>
 
+   <arg name="basler_sn" default="21135423"/>
   <include unless="$(arg use_camnode)"  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
+      <arg name="camera_id" value="Basler-$(arg basler_sn)"/>
+      <!-- not all cameras support all image formats, use Pylon viewer to see which one yours support -->
+      <!--arg name="pixel_format" value="bayer_rggb8"/-->
+      <arg name="pixel_format" value="bayer_bggr8"/>
+      <!--arg name="pixel_format" value="bayer_gbrg8"/-->
+      <!--arg name="pixel_format" value="bayer_grbg8"/--> 
+      <!--arg name="pixel_format" value="bayer_rggb16"/-->
+      <!--arg name="pixel_format" value="bayer_bggr16"/-->
+      <!--arg name="pixel_format" value="bayer_gbrg16"/-->
+      <!--arg name="pixel_format" value="bayer_grbg16"/--> 
+      <!--arg name="pixel_format" value="mono8"/--> 
+      <!--arg name="pixel_format" value="mono16"/--> 
       <arg name="camera_name" value="Basler1"/>
-      <arg name="camera_aravis_package" value="false"/>
+      <arg name="camera_aravis_package" value="false"/> 
       <arg name="basler_sn" value="21135423"/>
-      <arg name="roi_width" value="1624"/>
-      <arg name="roi_height" value="1234"/>
-      <arg name="digital_shift" default="0"/>
+      <arg name="frame_rate" value="20"/>
+      <arg name="exposure_mode" value="auto_once"/>
+      <arg name="exposure_time" value="1000"/>
+      <arg name="gain_mode" value="auto_once"/>
+      <arg name="gain" value="0"/>
       <arg name="mtu" value="1500"/>
       <arg name="bin_x" value="1"/>
       <arg name="bin_y" value="1"/>
       <arg name="roi_x" value="0"/>
       <arg name="roi_y" value="0"/>
+      <arg name="roi_width" value="1624"/>
+      <arg name="roi_height" value="1234"/>
   </include>
 	
   <node name="B1_view" pkg="image_view" type="image_view" >

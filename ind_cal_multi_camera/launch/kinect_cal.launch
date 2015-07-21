@@ -44,8 +44,6 @@
   <arg name="rgb_camera_info_url"   default="file://$(find ind_cal_multi_camera)/launch/asus_cal_files/$(arg cal_prefix)_rgb.yml" />
   <arg name="depth_camera_info_url" default="file://$(find ind_cal_multi_camera)/launch/asus_cal_files/$(arg cal_prefix)_ir.yml" />
 
-
-
   <!-- Hardware depth registration -->
   <arg name="depth_registration" default="true" />
 

@@ -5,29 +5,41 @@
    <arg name="gui" default="False" />
    <arg name="robot1" default="camera_scene" />
    <arg name="xacro_model" default="$(find ind_cal_multi_camera)/urdf/camera_scene.xacro" />
+   <arg name="camera_number" default="1"/>
 
-   <!-- Launch the basler camera nodes -->
-<!-- Basler camera node   -->
-  <node pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
-    <param name="camera_id" value="Basler-21499591"/>
-    <param name="pixel_format" value="bayer_bggr8"/>
-    <param name="exposure_mode" value="auto_once"/>
-    <param name="exposure_time" value="1000"/>
-    <param name="auto_white_balance_once" value="true"/>
-    <param name="gain_mode" value="auto_once"/>
-    <param name="gain" value="0"/>
-    <param name="digital_shift" value="0"/>
-    <param name="mtu" value="1500"/>
-    <param name="bin_x" value="1"/>
-    <param name="bin_y" value="1"/>
-    <param name="roi_x" value="0"/>
-    <param name="roi_y" value="0"/>
-    <param name="roi_width" value="1624"/>
-    <param name="roi_height" value="1234"/>
-    <param name="frame_rate" value="30"/>
+   <!-- Launch the basler camera -->
+  <include file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
+      <arg name="camera_name" value="Basler1"/>
+      <arg name="camera_aravis_package" value="true"/>
+      <arg name="basler_sn" value="21135423"/>
+      <arg name="exposure_auto" value="auto_once"/>
+      <arg name="exposure_time" value="10000"/>
+      <arg name="gain_auto" value="Once" />
+      <arg name="gain" value="0" />
+      <arg name="frame_rate" value="10"/>
+      <arg name="trigger_mode" value="Off"/>
+      <arg name="trigger_source" value="Line1"/>
+      <arg name="pixel_format" value="Mono8"/>
+  </include>
+
+  <!-- debayer and rectify -->
+  <node pkg="nodelet" type="nodelet" name="image_proc_nodelet$(arg camera_number)"  args="manager"/>
+  <node pkg="nodelet" type="nodelet" name="rectify$(arg camera_number)" args="load image_proc/rectify image_proc_nodelet$(arg camera_number)">
+    <remap from="camera_info" to="Basler$(arg camera_number)/camera_info"/>
+    <remap from="image_mono" to="Basler$(arg camera_number)/image_raw"/>
+    <remap from="image_rect" to="Basler$(arg camera_number)/image_rect"/>
   </node>
 
-   <!-- Launch the asus camera nodes -->
+  <node name="B1_view" pkg="image_view" type="image_view" >
+      <remap to="/Basler1/image_rect" from="image"/>
+  </node>
+
+  <node name="asu_view" pkg="image_view" type="image_view" >
+      <remap to="/asus1/rgb/image_rect_color" from="image"/>
+  </node>
+
+
+   <!-- Launch the asus camera -->
   <!-- Bus 2, device 1-->
   <include file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
     <arg name="topic_ns" value="asus1" />
@@ -37,19 +49,11 @@
     <arg name="publish_tf" value="false" />
   </include>
 
-  <!-- Bus 2, device 1-->
-  <include file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
-    <arg name="topic_ns" value="asus2" />
-    <arg name="tf_prefix" value="asus2" />
-    <arg name="cal_prefix" value="2" />
-    <arg name="device_id" value="3@1" />
-    <arg name="publish_tf" value="false" />
-  </include>
-
-
    <!-- Launch the extrinsic calibration service -->
    <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
      <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <!--param name="post_proc_on" value="true"/-->
+     <!--param name="observation_data_file" value="$(find ind_cal_multi_camera)/launch/junk.txt"/-->
      <rosparam>
        camera_file: "camera_scene_cameras.yaml"
        target_file: "camera_scene_targets.yaml"
@@ -57,14 +61,14 @@
      </rosparam>
    </node> 
 
-   <!-- Load the xacro file of the tower and cameras onto the parameter server as a robot description -->
+   <!-- Load the xacro file of the cameras and target onto the parameter server as a robot description -->
    <param name="$(arg robot1)/robot_description" command="$(find xacro)/xacro.py $(arg xacro_model)" />
    <param name="use_gui" value="$(arg gui)" />
 
    <!-- Launch robot state publishers for scene -->
    <node ns="$(arg robot1)" name="camera_scene_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
             <!--param name="tf_prefix" value="" /-->
-            <param name="publish_frequency" value="50" />
+            <param name="publish_frequency" value="100" />
     </node>
 
    <!-- Launch Rviz -->
@@ -76,6 +80,7 @@
        <remap from="mutable_joint_states" to="$(arg robot1)/joint_states" />
    </node>
 
+   <!-- Launch the placeholder GUI that allows us to call the calibration service by clicking the button -->
    <node name="cal_gui" pkg="calibrate_gui" type="calibrate_gui" />
 
 </launch>

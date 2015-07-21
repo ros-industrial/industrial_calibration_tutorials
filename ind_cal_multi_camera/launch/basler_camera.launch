@@ -59,13 +59,12 @@
    <!-- Basler camera node from aravis_camera_driver package -->
    <node unless="$(arg camera_aravis_package)"  pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
      <param name="camera_id" value="Basler-$(arg basler_sn)"/>
-     <param name="pixel_format" value="bayer_bggr8"/>
+     <param name="pixel_format" value="$(arg pixel_format)"/>
+     <param name="frame_rate" value="$(arg frame_rate)"/>
      <param name="exposure_mode" value="$(arg exposure_mode)"/>
      <param name="exposure_time" value="$(arg exposure_time)"/>
-     <param name="auto_white_balance_once" value="$(arg auto_white_balance)"/>
      <param name="gain_mode" value="$(arg gain_mode)"/>
      <param name="gain" value="$(arg gain)"/>
-     <param name="digital_shift" value="$(arg digital_shift)"/>
      <param name="mtu" value="$(arg mtu)"/>
      <param name="bin_x" value="$(arg bin_x)"/>
      <param name="bin_y" value="$(arg bin_y)"/>
@@ -73,7 +72,6 @@
      <param name="roi_y" value="$(arg roi_y)"/>
      <param name="roi_width" value="$(arg roi_width)"/>
      <param name="roi_height" value="$(arg roi_height)"/>
-     <param name="frame_rate" value="$(arg frame_rate)"/>
      <remap from="image" to="$(arg camera_name)/image_raw"/>
    </node>
 
