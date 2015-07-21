@@ -41,7 +41,7 @@
 
    <!-- Launch the asus camera -->
   <!-- Bus 2, device 1-->
-  <include file="$(find ind_cal_multi_camera)/launch/kinect_cal.launch" >
+  <include file="$(find ind_cal_multi_camera)/launch/kinect_camera.launch" >
     <arg name="topic_ns" value="asus1" />
     <arg name="tf_prefix" value="asus1" />
     <arg name="cal_prefix" value="1" />
