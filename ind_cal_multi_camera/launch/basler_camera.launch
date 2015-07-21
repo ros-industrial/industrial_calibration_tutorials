@@ -57,7 +57,7 @@
   </node>
 
    <!-- Basler camera node from aravis_camera_driver package -->
-   <node unless="$(arg camera_aravis_package)"  pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node">
+   <node unless="$(arg camera_aravis_package)"  pkg="aravis_camera_driver" type="aravis_camera_node" name="aravis_camera_node" output="screen">
      <param name="camera_id" value="Basler-$(arg basler_sn)"/>
      <param name="pixel_format" value="$(arg pixel_format)"/>
      <param name="frame_rate" value="$(arg frame_rate)"/>
