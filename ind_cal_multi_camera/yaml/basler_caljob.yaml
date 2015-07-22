@@ -8,7 +8,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 600
@@ -30,7 +30,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 600
@@ -52,7 +52,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 600
@@ -74,7 +74,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 600
@@ -96,7 +96,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 256
          roi_max_x: 856
@@ -118,7 +118,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 256
          roi_max_x: 856
@@ -140,7 +140,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 256
          roi_max_x: 856
@@ -162,7 +162,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 256
          roi_max_x: 856
@@ -184,7 +184,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 512
          roi_max_x: 1112
@@ -206,7 +206,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 512
          roi_max_x: 1112
@@ -228,7 +228,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 512
          roi_max_x: 1112
@@ -250,7 +250,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 512
          roi_max_x: 1112
@@ -272,7 +272,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 768
          roi_max_x: 1368
@@ -294,7 +294,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 768
          roi_max_x: 1368
@@ -316,7 +316,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 768
          roi_max_x: 1368
@@ -338,7 +338,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 768
          roi_max_x: 1368
@@ -360,7 +360,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 1024
          roi_max_x: 1624
@@ -382,7 +382,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 1024
          roi_max_x: 1624
@@ -404,7 +404,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 1024
          roi_max_x: 1624
@@ -426,7 +426,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 1024
          roi_max_x: 1624
@@ -448,7 +448,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 660
@@ -470,7 +470,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 660
@@ -492,7 +492,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 660
@@ -514,7 +514,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 660
@@ -536,7 +536,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 241
          roi_max_x: 901
@@ -558,7 +558,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 241
          roi_max_x: 901
@@ -580,7 +580,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 241
          roi_max_x: 901
@@ -602,7 +602,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 241
          roi_max_x: 901
@@ -624,7 +624,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 482
          roi_max_x: 1142
@@ -646,7 +646,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 482
          roi_max_x: 1142
@@ -668,7 +668,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 482
          roi_max_x: 1142
@@ -690,7 +690,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 482
          roi_max_x: 1142
@@ -712,7 +712,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 723
          roi_max_x: 1383
@@ -734,7 +734,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 723
          roi_max_x: 1383
@@ -756,7 +756,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 723
          roi_max_x: 1383
@@ -778,7 +778,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 723
          roi_max_x: 1383
@@ -800,7 +800,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 964
          roi_max_x: 1624
@@ -822,7 +822,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 964
          roi_max_x: 1624
@@ -844,7 +844,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 964
          roi_max_x: 1624
@@ -866,7 +866,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 964
          roi_max_x: 1624
@@ -888,7 +888,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 720
@@ -910,7 +910,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 720
@@ -932,7 +932,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 720
@@ -954,7 +954,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 720
@@ -976,7 +976,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 226
          roi_max_x: 946
@@ -998,7 +998,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 226
          roi_max_x: 946
@@ -1020,7 +1020,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 226
          roi_max_x: 946
@@ -1042,7 +1042,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 226
          roi_max_x: 946
@@ -1064,7 +1064,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 452
          roi_max_x: 1172
@@ -1086,7 +1086,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 452
          roi_max_x: 1172
@@ -1108,7 +1108,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 452
          roi_max_x: 1172
@@ -1130,7 +1130,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 452
          roi_max_x: 1172
@@ -1152,7 +1152,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 678
          roi_max_x: 1398
@@ -1174,7 +1174,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 678
          roi_max_x: 1398
@@ -1196,7 +1196,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 678
          roi_max_x: 1398
@@ -1218,7 +1218,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 678
          roi_max_x: 1398
@@ -1240,7 +1240,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 904
          roi_max_x: 1624
@@ -1262,7 +1262,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 904
          roi_max_x: 1624
@@ -1284,7 +1284,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 904
          roi_max_x: 1624
@@ -1306,7 +1306,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 904
          roi_max_x: 1624
@@ -1328,7 +1328,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 780
@@ -1350,7 +1350,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 780
@@ -1372,7 +1372,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 780
@@ -1394,7 +1394,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 780
@@ -1416,7 +1416,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 211
          roi_max_x: 991
@@ -1438,7 +1438,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 211
          roi_max_x: 991
@@ -1460,7 +1460,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 211
          roi_max_x: 991
@@ -1482,7 +1482,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 211
          roi_max_x: 991
@@ -1504,7 +1504,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 422
          roi_max_x: 1202
@@ -1526,7 +1526,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 422
          roi_max_x: 1202
@@ -1548,7 +1548,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 422
          roi_max_x: 1202
@@ -1570,7 +1570,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 422
          roi_max_x: 1202
@@ -1592,7 +1592,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 633
          roi_max_x: 1413
@@ -1614,7 +1614,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 633
          roi_max_x: 1413
@@ -1636,7 +1636,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 633
          roi_max_x: 1413
@@ -1658,7 +1658,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 633
          roi_max_x: 1413
@@ -1680,7 +1680,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 844
          roi_max_x: 1624
@@ -1702,7 +1702,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 844
          roi_max_x: 1624
@@ -1724,7 +1724,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 844
          roi_max_x: 1624
@@ -1746,7 +1746,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 844
          roi_max_x: 1624
@@ -1768,7 +1768,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 840
@@ -1790,7 +1790,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 840
@@ -1812,7 +1812,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 840
@@ -1834,7 +1834,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 840
@@ -1856,7 +1856,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 196
          roi_max_x: 1036
@@ -1878,7 +1878,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 196
          roi_max_x: 1036
@@ -1900,7 +1900,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 196
          roi_max_x: 1036
@@ -1922,7 +1922,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 196
          roi_max_x: 1036
@@ -1944,7 +1944,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 392
          roi_max_x: 1232
@@ -1966,7 +1966,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 392
          roi_max_x: 1232
@@ -1988,7 +1988,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 392
          roi_max_x: 1232
@@ -2010,7 +2010,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 392
          roi_max_x: 1232
@@ -2032,7 +2032,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 588
          roi_max_x: 1428
@@ -2054,7 +2054,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 588
          roi_max_x: 1428
@@ -2076,7 +2076,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 588
          roi_max_x: 1428
@@ -2098,7 +2098,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 588
          roi_max_x: 1428
@@ -2120,7 +2120,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 784
          roi_max_x: 1624
@@ -2142,7 +2142,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 784
          roi_max_x: 1624
@@ -2164,7 +2164,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 784
          roi_max_x: 1624
@@ -2186,7 +2186,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 784
          roi_max_x: 1624
@@ -2208,7 +2208,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 900
@@ -2230,7 +2230,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 900
@@ -2252,7 +2252,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 900
@@ -2274,7 +2274,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 900
@@ -2296,7 +2296,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 181
          roi_max_x: 1081
@@ -2318,7 +2318,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 181
          roi_max_x: 1081
@@ -2340,7 +2340,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 181
          roi_max_x: 1081
@@ -2362,7 +2362,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 181
          roi_max_x: 1081
@@ -2384,7 +2384,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 362
          roi_max_x: 1262
@@ -2406,7 +2406,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 362
          roi_max_x: 1262
@@ -2428,7 +2428,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 362
          roi_max_x: 1262
@@ -2450,7 +2450,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 362
          roi_max_x: 1262
@@ -2472,7 +2472,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 543
          roi_max_x: 1443
@@ -2494,7 +2494,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 543
          roi_max_x: 1443
@@ -2516,7 +2516,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 543
          roi_max_x: 1443
@@ -2538,7 +2538,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 543
          roi_max_x: 1443
@@ -2560,7 +2560,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 724
          roi_max_x: 1624
@@ -2582,7 +2582,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 724
          roi_max_x: 1624
@@ -2604,7 +2604,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 724
          roi_max_x: 1624
@@ -2626,7 +2626,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 724
          roi_max_x: 1624
@@ -2648,7 +2648,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 960
@@ -2670,7 +2670,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 960
@@ -2692,7 +2692,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 960
@@ -2714,7 +2714,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 0
          roi_max_x: 960
@@ -2736,7 +2736,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 166
          roi_max_x: 1126
@@ -2758,7 +2758,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 166
          roi_max_x: 1126
@@ -2780,7 +2780,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 166
          roi_max_x: 1126
@@ -2802,7 +2802,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 166
          roi_max_x: 1126
@@ -2824,7 +2824,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 332
          roi_max_x: 1292
@@ -2846,7 +2846,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 332
          roi_max_x: 1292
@@ -2868,7 +2868,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 332
          roi_max_x: 1292
@@ -2890,7 +2890,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 332
          roi_max_x: 1292
@@ -2912,7 +2912,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 498
          roi_max_x: 1458
@@ -2934,7 +2934,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 498
          roi_max_x: 1458
@@ -2956,7 +2956,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 498
          roi_max_x: 1458
@@ -2978,7 +2978,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 498
          roi_max_x: 1458
@@ -3000,7 +3000,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 664
          roi_max_x: 1624
@@ -3022,7 +3022,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 664
          roi_max_x: 1624
@@ -3044,7 +3044,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 664
          roi_max_x: 1624
@@ -3066,7 +3066,7 @@ scenes:
     -
          service_name: ObserverTrigger
          instructions: Center target within region of interest
-         image_topic: /basler1/rgb/image
+         image_topic: Basler1/image_raw
          target_type: 1
          roi_min_x: 664
          roi_max_x: 1624
