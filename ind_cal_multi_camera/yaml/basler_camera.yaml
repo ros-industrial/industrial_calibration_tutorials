@@ -3,11 +3,11 @@
 static_cameras:
  -
     camera_name: Basler1
-    camera_optical_frame: /Basler1_optical_frame
     trigger: NO_WAIT_TRIGGER
-    image_topic: /basler1/rgb/image
+    image_topic: Basler1/image_raw
+    camera_optical_frame: Basler1_optical_frame
     transform_interface: default_ti
-    xyz_aaxis_pose[ 0.0, 0.0, 1.0, 3.14, 0.0, 0.0 ]
+    xyz_aaxis_pose: [ 0.0, 0.0, 1.0, 3.14, 0.0, 0.0 ]
     focal_length_x: 3528.3
     focal_length_y: 3518.3
     center_x: 868.9
