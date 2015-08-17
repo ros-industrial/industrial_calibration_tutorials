@@ -2,7 +2,6 @@
 reference_frame: world_frame
 scenes:
 -
-    scene_id: 0
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -24,7 +23,6 @@ scenes:
         roi_y_max: 500
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 1
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -46,7 +44,6 @@ scenes:
         roi_y_max: 744
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 2
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -68,7 +65,6 @@ scenes:
         roi_y_max: 989
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 3
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -90,7 +86,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 4
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -112,7 +107,6 @@ scenes:
         roi_y_max: 500
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 5
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -134,7 +128,6 @@ scenes:
         roi_y_max: 744
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 6
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -156,7 +149,6 @@ scenes:
         roi_y_max: 989
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 7
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -178,7 +170,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 8
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -200,7 +191,6 @@ scenes:
         roi_y_max: 500
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 9
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -222,7 +212,6 @@ scenes:
         roi_y_max: 744
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 10
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -244,7 +233,6 @@ scenes:
         roi_y_max: 989
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 11
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -266,7 +254,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 12
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -288,7 +275,6 @@ scenes:
         roi_y_max: 500
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 13
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -310,7 +296,6 @@ scenes:
         roi_y_max: 744
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 14
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -332,7 +317,6 @@ scenes:
         roi_y_max: 989
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 15
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -354,7 +338,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 16
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -376,7 +359,6 @@ scenes:
         roi_y_max: 500
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 17
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -398,7 +380,6 @@ scenes:
         roi_y_max: 744
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 18
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -420,7 +401,6 @@ scenes:
         roi_y_max: 989
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 19
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -442,7 +422,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 20
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -464,7 +443,6 @@ scenes:
         roi_y_max: 550
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 21
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -486,7 +464,6 @@ scenes:
         roi_y_max: 778
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 22
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -508,7 +485,6 @@ scenes:
         roi_y_max: 1006
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 23
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -530,7 +506,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 24
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -552,7 +527,6 @@ scenes:
         roi_y_max: 550
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 25
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -574,7 +548,6 @@ scenes:
         roi_y_max: 778
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 26
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -596,7 +569,6 @@ scenes:
         roi_y_max: 1006
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 27
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -618,7 +590,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 28
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -640,7 +611,6 @@ scenes:
         roi_y_max: 550
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 29
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -662,7 +632,6 @@ scenes:
         roi_y_max: 778
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 30
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -684,7 +653,6 @@ scenes:
         roi_y_max: 1006
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 31
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -706,7 +674,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 32
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -728,7 +695,6 @@ scenes:
         roi_y_max: 550
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 33
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -750,7 +716,6 @@ scenes:
         roi_y_max: 778
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 34
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -772,7 +737,6 @@ scenes:
         roi_y_max: 1006
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 35
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -794,7 +758,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 36
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -816,7 +779,6 @@ scenes:
         roi_y_max: 550
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 37
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -838,7 +800,6 @@ scenes:
         roi_y_max: 778
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 38
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -860,7 +821,6 @@ scenes:
         roi_y_max: 1006
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 39
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -882,7 +842,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 40
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -904,7 +863,6 @@ scenes:
         roi_y_max: 600
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 41
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -926,7 +884,6 @@ scenes:
         roi_y_max: 811
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 42
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -948,7 +905,6 @@ scenes:
         roi_y_max: 1022
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 43
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -970,7 +926,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 44
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -992,7 +947,6 @@ scenes:
         roi_y_max: 600
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 45
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1014,7 +968,6 @@ scenes:
         roi_y_max: 811
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 46
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1036,7 +989,6 @@ scenes:
         roi_y_max: 1022
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 47
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1058,7 +1010,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 48
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1080,7 +1031,6 @@ scenes:
         roi_y_max: 600
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 49
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1102,7 +1052,6 @@ scenes:
         roi_y_max: 811
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 50
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1124,7 +1073,6 @@ scenes:
         roi_y_max: 1022
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 51
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1146,7 +1094,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 52
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1168,7 +1115,6 @@ scenes:
         roi_y_max: 600
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 53
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1190,7 +1136,6 @@ scenes:
         roi_y_max: 811
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 54
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1212,7 +1157,6 @@ scenes:
         roi_y_max: 1022
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 55
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1234,7 +1178,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 56
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1256,7 +1199,6 @@ scenes:
         roi_y_max: 600
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 57
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1278,7 +1220,6 @@ scenes:
         roi_y_max: 811
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 58
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1300,7 +1241,6 @@ scenes:
         roi_y_max: 1022
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 59
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1322,7 +1262,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 60
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1344,7 +1283,6 @@ scenes:
         roi_y_max: 650
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 61
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1366,7 +1304,6 @@ scenes:
         roi_y_max: 844
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 62
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1388,7 +1325,6 @@ scenes:
         roi_y_max: 1039
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 63
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1410,7 +1346,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 64
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1432,7 +1367,6 @@ scenes:
         roi_y_max: 650
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 65
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1454,7 +1388,6 @@ scenes:
         roi_y_max: 844
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 66
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1476,7 +1409,6 @@ scenes:
         roi_y_max: 1039
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 67
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1498,7 +1430,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 68
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1520,7 +1451,6 @@ scenes:
         roi_y_max: 650
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 69
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1542,7 +1472,6 @@ scenes:
         roi_y_max: 844
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 70
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1564,7 +1493,6 @@ scenes:
         roi_y_max: 1039
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 71
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1586,7 +1514,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 72
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1608,7 +1535,6 @@ scenes:
         roi_y_max: 650
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 73
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1630,7 +1556,6 @@ scenes:
         roi_y_max: 844
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 74
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1652,7 +1577,6 @@ scenes:
         roi_y_max: 1039
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 75
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1674,7 +1598,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 76
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1696,7 +1619,6 @@ scenes:
         roi_y_max: 650
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 77
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1718,7 +1640,6 @@ scenes:
         roi_y_max: 844
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 78
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1740,7 +1661,6 @@ scenes:
         roi_y_max: 1039
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 79
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1762,7 +1682,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 80
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1784,7 +1703,6 @@ scenes:
         roi_y_max: 700
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 81
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1806,7 +1724,6 @@ scenes:
         roi_y_max: 878
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 82
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1828,7 +1745,6 @@ scenes:
         roi_y_max: 1056
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 83
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1850,7 +1766,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 84
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1872,7 +1787,6 @@ scenes:
         roi_y_max: 700
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 85
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1894,7 +1808,6 @@ scenes:
         roi_y_max: 878
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 86
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1916,7 +1829,6 @@ scenes:
         roi_y_max: 1056
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 87
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1938,7 +1850,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 88
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1960,7 +1871,6 @@ scenes:
         roi_y_max: 700
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 89
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -1982,7 +1892,6 @@ scenes:
         roi_y_max: 878
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 90
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2004,7 +1913,6 @@ scenes:
         roi_y_max: 1056
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 91
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2026,7 +1934,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 92
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2048,7 +1955,6 @@ scenes:
         roi_y_max: 700
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 93
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2070,7 +1976,6 @@ scenes:
         roi_y_max: 878
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 94
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2092,7 +1997,6 @@ scenes:
         roi_y_max: 1056
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 95
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2114,7 +2018,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 96
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2136,7 +2039,6 @@ scenes:
         roi_y_max: 700
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 97
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2158,7 +2060,6 @@ scenes:
         roi_y_max: 878
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 98
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2180,7 +2081,6 @@ scenes:
         roi_y_max: 1056
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 99
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2202,7 +2102,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 100
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2224,7 +2123,6 @@ scenes:
         roi_y_max: 750
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 101
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2246,7 +2144,6 @@ scenes:
         roi_y_max: 911
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 102
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2268,7 +2165,6 @@ scenes:
         roi_y_max: 1072
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 103
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2290,7 +2186,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 104
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2312,7 +2207,6 @@ scenes:
         roi_y_max: 750
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 105
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2334,7 +2228,6 @@ scenes:
         roi_y_max: 911
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 106
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2356,7 +2249,6 @@ scenes:
         roi_y_max: 1072
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 107
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2378,7 +2270,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 108
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2400,7 +2291,6 @@ scenes:
         roi_y_max: 750
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 109
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2422,7 +2312,6 @@ scenes:
         roi_y_max: 911
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 110
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2444,7 +2333,6 @@ scenes:
         roi_y_max: 1072
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 111
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2466,7 +2354,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 112
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2488,7 +2375,6 @@ scenes:
         roi_y_max: 750
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 113
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2510,7 +2396,6 @@ scenes:
         roi_y_max: 911
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 114
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2532,7 +2417,6 @@ scenes:
         roi_y_max: 1072
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 115
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2554,7 +2438,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 116
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2576,7 +2459,6 @@ scenes:
         roi_y_max: 750
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 117
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2598,7 +2480,6 @@ scenes:
         roi_y_max: 911
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 118
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2620,7 +2501,6 @@ scenes:
         roi_y_max: 1072
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 119
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2642,7 +2522,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 120
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2664,7 +2543,6 @@ scenes:
         roi_y_max: 800
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 121
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2686,7 +2564,6 @@ scenes:
         roi_y_max: 944
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 122
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2708,7 +2585,6 @@ scenes:
         roi_y_max: 1089
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 123
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2730,7 +2606,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 124
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2752,7 +2627,6 @@ scenes:
         roi_y_max: 800
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 125
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2774,7 +2648,6 @@ scenes:
         roi_y_max: 944
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 126
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2796,7 +2669,6 @@ scenes:
         roi_y_max: 1089
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 127
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2818,7 +2690,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 128
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2840,7 +2711,6 @@ scenes:
         roi_y_max: 800
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 129
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2862,7 +2732,6 @@ scenes:
         roi_y_max: 944
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 130
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2884,7 +2753,6 @@ scenes:
         roi_y_max: 1089
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 131
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2906,7 +2774,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 132
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2928,7 +2795,6 @@ scenes:
         roi_y_max: 800
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 133
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2950,7 +2816,6 @@ scenes:
         roi_y_max: 944
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 134
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2972,7 +2837,6 @@ scenes:
         roi_y_max: 1089
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 135
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -2994,7 +2858,6 @@ scenes:
         roi_y_max: 1234
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 136
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -3016,7 +2879,6 @@ scenes:
         roi_y_max: 800
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 137
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -3038,7 +2900,6 @@ scenes:
         roi_y_max: 944
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 138
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
@@ -3060,7 +2921,6 @@ scenes:
         roi_y_max: 1089
         cost_type: CameraReprjErrorWithDistortionPK
 -
-    scene_id: 139
     trigger: ROS_CAMERA_OBSERVER_TRIGGER
     trigger_parameters:
     -
