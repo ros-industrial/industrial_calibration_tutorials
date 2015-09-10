@@ -10,7 +10,7 @@
    <arg name="asus_calprefix" default="1"/>
 
    <arg name="basler" default="false" />
-   <!--arg name="basler_sn" default="21511093"/-->
+   <arg name="basler_sn" default="21511093"/>
    <!--arg name="basler_sn" default="21511083"/-->
    <!--arg name="basler_sn" default="21135424"/-->
    <!--arg name="basler_sn" default="21516700"/--> 
@@ -20,7 +20,7 @@
    <!--arg name="basler_sn" default="21511095"/-->
    <!--arg name="basler_sn" default="21496537"/-->
    <!--arg name="basler_sn" default="21511086"/-->
-   <arg name="basler_sn" default="21135423"/>
+   <!--arg name="basler_sn" default="21135423"/-->
 
    <!-- Launch the asus camera node -->
    <include if="$(arg asus)" file="$(find ind_cal_multi_camera)/launch/kinect_camera.launch" >
@@ -34,8 +34,8 @@
    <!-- Launch the basler camera -->
    <include file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
        <arg name="camera_name" value="Basler1"/>
-       <arg name="camera_aravis_package" value="true"/>
        <arg name="basler_sn" value="$(arg basler_sn)"/>
+       <arg name="camera_aravis_package" value="true"/>
        <arg name="exposure_auto" value="auto_once"/>
        <arg name="exposure_time" value="10000"/>
        <arg name="gain_auto" value="Once" />
@@ -44,6 +44,7 @@
        <arg name="trigger_mode" value="Off"/>
        <arg name="trigger_source" value="Line1"/>
        <arg name="pixel_format" value="Mono8"/>
+       <arg name="url" value="file://$(find ind_cal_multi_camera)/camera_info/Basler$(arg basler_sn).yaml"/>
    </include>
 
    <!-- Launch ros's camera calibration-->

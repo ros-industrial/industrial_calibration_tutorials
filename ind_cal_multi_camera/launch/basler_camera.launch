@@ -41,9 +41,10 @@
    <arg name="roi_y" default="0"/>
    <arg name="roi_width" default="1924"/>
    <arg name="roi_height" default="1234"/>
-   
+   <arg name="url" default="file://$(find ind_cal_multi_camera)/camera_info/Basler$(arg basler_sn).yaml"/>
+
   <!-- Basler camera node from camera_aravis package-->
-  <node if="$(arg camera_aravis_package)" pkg="camera_aravis" type="camnode" name="$(arg camera_name)" output="screen">
+  <node if="$(arg camera_aravis_package)" pkg="camera_aravis" type="camnode" name="$(arg camera_name)">
     <param name="guid" value="$(arg guid)"/>
     <param name="ExposureAuto" value="$(arg exposure_auto)"/>
     <param name="GainAuto" value="$(arg gain_auto)"/>
@@ -54,6 +55,7 @@
     <param name="TriggerMode" value="$(arg trigger_mode)"/>
     <param name="TriggerSource" value="$(arg trigger_source)"/>
     <param name="PixelFormat" value="$(arg pixel_format)"/> 
+    <param name="url" value="$(arg url)"/>
   </node>
 
    <!-- Basler camera node from aravis_camera_driver package -->

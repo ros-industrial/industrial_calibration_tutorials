@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<launch>
+
+   <node name="create_target" pkg="target_finder" type="target_gen" >
+      <param name="target_type" value="2"/>
+      <param name="target_rows" value="10"/>
+      <param name="target_cols" value="10"/>
+      <param name="target_circle_dia" value="0.0254"/>
+      <param name="target_spacing" value="0.0381"/>
+      <param name="target_name" value="Mgrid10x10"/>
+      <param name="target_frame" value="target_frame"/>
+      <param name="target_file_path" value="$(find ind_cal_multi_camera)/yaml/Mgrid10x10.yaml"/>
+      <param name="transform_interface" value="default_ti"/>
+   </node>
+
+</launch>
