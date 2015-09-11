@@ -10,14 +10,14 @@
    <arg name="asus_calprefix" default="1"/>
 
    <arg name="basler" default="false" />
-   <arg name="basler_sn" default="21511093"/>
+   <!--arg name="basler_sn" default="21511093"/-->
    <!--arg name="basler_sn" default="21511083"/-->
    <!--arg name="basler_sn" default="21135424"/-->
    <!--arg name="basler_sn" default="21516700"/--> 
    <!--arg name="basler_sn" default="21511094"/-->
    <!--arg name="basler_sn" default="21499591"/-->
    <!--arg name="basler_sn" default="21511088"/-->
-   <!--arg name="basler_sn" default="21511095"/-->
+   <arg name="basler_sn" default="21511095"/>
    <!--arg name="basler_sn" default="21496537"/-->
    <!--arg name="basler_sn" default="21511086"/-->
    <!--arg name="basler_sn" default="21135423"/-->
@@ -50,7 +50,9 @@
    <!-- Launch ros's camera calibration-->
    <node pkg="camera_calibration" type="cameracalibrator.py" name="ros_camera_calibration" args="-s 10x10 -p circles --square=0.2" output="screen">
               <remap if="$(arg basler)" from="image" to="Basler1/image_raw"/>
-              <remap if="$(arg asus)" from="image" to="asus1/rgb/image_rect_color"/>
+              <remap if="$(arg basler)" from="camera" to="Basler1"/>
+              <remap if="$(arg asus)" from="image" to="asus1/rgb/image_color"/>
+              <remap if="$(arg asus)" from="camera" to="asus1"/>
    </node>
 
    <node name="image_view" pkg="image_view" type="image_view" >
