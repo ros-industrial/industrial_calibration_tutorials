@@ -83,7 +83,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+  INCLUDE_DIRS include
 #  LIBRARIES ind_cal_multi_camera
 #  CATKIN_DEPENDS industrial_extrinsic_cal roscpp rospy std_msgs
 #  DEPENDS system_lib
@@ -107,6 +107,7 @@ include_directories(
 
 ## Declare a cpp executable
  add_executable(calibration_image_pub src/cal_image_publisher.cpp)
+ add_executable(usb_serial src/usb_serial.c)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -115,6 +116,11 @@ include_directories(
 ## Specify libraries to link a library or executable target against
 target_link_libraries(calibration_image_pub
  ${catkin_LIBRARIES}
+ )
+
+target_link_libraries(usb_serial
+ ${catkin_LIBRARIES}
+ m
  )
 
 #############
