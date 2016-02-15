@@ -47,6 +47,14 @@
       <arg name="roi_width" value="1624"/>
       <arg name="roi_height" value="1234"/>
   </include>
+ 
+  <node pkg="nodelet" type="nodelet" name="image_proc_nodelet$(arg camera_number)"  args="manager"/>
+  <node pkg="nodelet" type="nodelet" name="rectify$(arg camera_number)" args="load image_proc/rectify image_proc_nodelet $(arg camera_number)">
+     <remap from="camera_info" to="Basler$(arg camera_number)/camera_info"/>
+     <remap from="image_mono" to="Basler$(arg camera_number)/image_raw"/>
+     <remap from="image_rect" to="Basler$(arg camera_number)/image_rect"/>
+  </node>
+
 	
   <node name="B1_view" pkg="image_view" type="image_view" >
       <remap to="/Basler1/image_raw" from="image"/>
