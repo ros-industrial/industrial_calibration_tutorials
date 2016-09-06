@@ -24,6 +24,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T1_camera2
     camera_optical_frame: /T1_camera2_rgb_optical_frame
@@ -47,6 +49,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T1_camera3
     camera_optical_frame: /T1_camera3_rgb_optical_frame
@@ -70,6 +74,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T1_camera4
     camera_optical_frame: /T1_camera4_rgb_optical_frame
@@ -93,6 +99,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T2_camera1
     camera_optical_frame: /T2_camera1_rgb_optical_frame
@@ -116,6 +124,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T2_camera2
     camera_optical_frame: /T2_camera2_rgb_optical_frame
@@ -139,6 +149,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T2_camera3
     camera_optical_frame: /T2_camera3_rgb_optical_frame
@@ -162,6 +174,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
  -
     camera_name: T2_camera4
     camera_optical_frame: /T2_camera4_rgb_optical_frame
@@ -185,3 +199,5 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_width: 640
+    image_height: 480
