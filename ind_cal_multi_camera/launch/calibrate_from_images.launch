@@ -38,7 +38,7 @@
 
    <!-- Launch mutable joint state publisher for calibratable transforms -->
    <node  name="tower1_camera_locs" pkg="industrial_extrinsic_cal" type="mutable_joint_state_publisher" >
-       <param name="mutableJointStateYamlFile" value="$(find ind_cal_multi_camera)/yaml/towers_mutable_joint_states.yaml" />
+       <param name="mutable_joint_state_yaml_file" value="$(find ind_cal_multi_camera)/yaml/towers_mutable_joint_states.yaml" />
        <remap from="mutable_joint_states" to="$(arg robot1)/joint_states" />
    </node>
 
