@@ -24,6 +24,8 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_height: 480
+    image_width: 640
  -
     camera_name: asus2
     camera_optical_frame: /asus2_rgb_optical_frame
@@ -47,3 +49,5 @@ static_cameras:
     distortion_k3: 0.03
     distortion_p1: 0.01
     distortion_p2: 0.01
+    image_height: 480
+    image_width: 640

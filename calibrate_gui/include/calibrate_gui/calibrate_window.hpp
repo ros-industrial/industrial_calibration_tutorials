@@ -4,13 +4,14 @@
 #include <QMainWindow>
 #include <QtGui>
 #include <QtGui/QMainWindow>
+#ifndef Q_MOC_RUN
 #include "ui_calibrate_window.h"
 #include <iostream>
 #include <ros/ros.h> 
 #include <actionlib/client/simple_action_client.h>
 #include <industrial_extrinsic_cal/calibrationAction.h>
 #include <industrial_extrinsic_cal/calibrate.h>
-
+#endif
 
 namespace calibrate_gui{
 

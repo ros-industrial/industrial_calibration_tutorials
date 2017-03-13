@@ -1,8 +1,12 @@
+
 #include <QtGui>
 #include <QtGui/QApplication>
-#include "../include/calibrate_gui/calibrate_window.hpp"
-// ros includes
+#ifndef Q_MOC_RUN
 #include <ros/ros.h> 
+#include "../include/calibrate_gui/calibrate_window.hpp"
+#include <ros/network.h>
+#endif
+
 
 using calibrate_gui::CalMainWindow;
 

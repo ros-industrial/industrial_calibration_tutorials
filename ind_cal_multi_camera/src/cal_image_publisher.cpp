@@ -20,6 +20,10 @@
 #include <opencv/cvwimage.h>
 #include <opencv/highgui.h>
 #include <cv_bridge/cv_bridge.h>
+#include <cv.h>
+#include "opencv2/core.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/highgui.hpp"
 
 int main(int argc, char** argv)
 {
