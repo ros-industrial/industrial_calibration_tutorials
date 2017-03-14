@@ -14,6 +14,7 @@
    <!-- Launch the extrinsic calibration service -->
    <node pkg="industrial_extrinsic_cal" type="service_node" name="calibration_service_node" output="screen" >
      <param name="yaml_file_path" value="$(find ind_cal_multi_camera)/yaml/" />
+     <param name="use_circle_detector" value="True" />
      <rosparam>
        camera_file: "scan_n_plan_cameras.yaml"
        target_file: "scan_n_plan_targets.yaml"
