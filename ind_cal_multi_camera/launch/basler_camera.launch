@@ -20,7 +20,7 @@
    <arg name="basler_sn" default="21499591"/>
    <arg name="camera_name" default="Basler1"/>
    <arg name="camera_id" default="Basler-$(arg basler_sn)"/>
-   <arg name="guid" default="Basler-$(arg basler_sn)" />
+   <arg name="guid" default="Basler$(arg basler_sn)" />
    <arg name="exposure_auto" default="Once"/>
    <arg name="exposure_mode" default="auto_once"/>
    <arg name="exposure_time" default="2000.0" />
