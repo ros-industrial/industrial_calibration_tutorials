@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<robot name="ifm_cal" xmlns:xacro="http://ros.org/wiki/xacro">
+
+     <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/ifm_cal_macro.xacro"/>
+     <xacro:include filename="$(find industrial_extrinsic_cal)/urdf/basler_cal_macro.xacro"/>
+
+      <link name="world_frame" />
+      <link name="target_frame" >
+	<visual>
+                   <origin xyz="0.120 0.180 -0.006" />
+  	    <geometry>
+           	           <box size="0.335  0.455 0.005" />
+                    </geometry>
+               </visual>
+     </link>
+     <joint name="$world_2_cal_target_joint" type="fixed" >
+               <parent link="world_frame" />
+	<child link="target_frame" />
+	<origin rpy="1.5708 0.0 -1.5708" xyz="0.0 1.0 1.0" />
+     </joint>
+
+      <xacro:ifm_sensor_definitions prefix="ifm1" parent_link="target_frame"/>
+      <xacro:basler_sensor_definitions prefix="Basler1" parent_link="target_frame"/>
+
+</robot>
+
+

@@ -1,12 +1,12 @@
 <launch>
   <arg name="view" default="true"/>
   <arg name="use_camnode" default="true"/>
-
+  <arg name="camera_number" default="1"/>
 
   <include if="$(arg use_camnode)"  file="$(find ind_cal_multi_camera)/launch/basler_camera.launch" >
       <arg name="camera_name" value="Basler1"/>
       <arg name="camera_aravis_package" value="true"/>
-      <arg name="basler_sn" value="21135423"/>
+      <arg name="basler_sn" value="21135424"/>
       <arg name="exposure_auto" value="auto_once"/>
       <arg name="exposure_time" value="2000"/>
       <arg name="gain_auto" value="Once" />
