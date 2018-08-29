@@ -25,7 +25,7 @@
    </node> 
 
    <!-- Load the xacro file of the tower and cameras onto the parameter server as a robot description -->
-   <param name="$(arg robot1)/robot_description" command="$(find xacro)/xacro.py $(arg tower1_model)" />
+   <param name="$(arg robot1)/robot_description" command="$(find xacro)/xacro --inorder $(arg tower1_model)" />
    <param name="use_gui" value="$(arg gui)" />
 
    <!-- Launch robot state publishers for both towers -->
