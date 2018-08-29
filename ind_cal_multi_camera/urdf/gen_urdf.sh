@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rosrun xacro xacro.py camera_scene.xacro > camera_scene.urdf
+rosrun xacro xacro --inorder camera_scene.xacro > camera_scene.urdf
 
